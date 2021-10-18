@@ -1,0 +1,47 @@
+/* INSCRIÇÃO ALUNOS E PROFESSORES */
+#rede-delta-alunos-prof {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0 60px 0;
+    margin: 0 auto;
+    max-width: 1024px;
+    align-items: flex-start;
+}
+
+.alunos-prof-elemento {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alunos-prof-elemento p {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 85px 40px 85px;
+    color: var(--aluno-ou-professor);
+    font-family: var(--aluno-ou-professor-fonte);
+    font-weight: bold;
+    font-size: var(--aluno-ou-professor-tamanho);
+}
+
+.alunos-prof-elemento img {
+    max-width: 100%;
+    width: 120px;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    #rede-delta-alunos-prof {
+        gap: 80px;
+    }
+
+    .alunos-prof-elemento {
+        flex-basis: 100%;
+    }
+
+    .alunos-prof-elemento p {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
