@@ -1,0 +1,77 @@
+:root {
+  font-size: 62.5%;
+  /*fontes e tamanhos*/
+  --h1-tamanho: 7.2rem;
+  --h1-fonte: Cinzel;
+
+  --h2-tamanho: 3.6rem;
+  --h2-fonte: Cinzel;
+
+  --h3-tamanho: 3rem;
+  --h3-fonte: Cinzel;
+
+  --h4-tamanho: 2.4rem;
+  --h4-fonte: Cinzel;
+
+  --botoes-tamanho: 2rem;
+  --botoes-fonte: Cinzel;
+
+  --header-tamanho: 1.8rem;
+  --header-fonte: Cinzel;
+
+  --footer-tamanho: 1.2rem;
+  --footer-fonte: Montserrat;
+
+  --forms-tamanho: 1.2rem;
+  --forms-fonte: Montserrat;
+
+  --enviar-tamanho: 1.8rem;
+  --enviar-fonte: Montserrat;
+
+  --dev-beets-tamanho: 1.1rem;
+  --dev-beets-fonte: Montserrat;
+
+  --descricao-padrao-tamanho: 1.4rem;
+  --descricao-padrao-fonte: Montserrat;
+
+  --descricao-cases-tamanho: 2.4rem;
+  --descricao-cases-fonte: Montserrat;
+
+  --descricao-contato-tamanho: 2.4rem;
+  --descricao-contato-fonte: Montserrat;
+
+  --subtitulo-banner-tamanho: 2.4rem;
+  --subtitulo-banner-fonte: Cinzel;
+
+  --paragrafo-home-tamanho: 2.4rem;
+  --paragrafo-home-fonte: Cinzel;
+
+  --titulo-servicos-tamanho: 2.8rem;
+  --titulo-servicos-fonte: Cinzel;
+
+  --aluno-ou-professor-tamanho: 1.8rem;
+  --aluno-ou-professor-fonte: Cinzel;
+
+  /*cores*/
+  --h1-home: #ffffff;
+  --h1-padrao: #055d7c;
+  --h2-escuro: #161571;
+  --h2-claro: #055d7c;
+  --h3: #161571;
+  --h4: #161571;
+  --h4-chamada-servicos: #cfab00;
+
+  --cor-footer: #ffffff;
+  --cor-header: #84b5be;
+  --cor-header-hover: #161571;
+  --forms: #000000;
+  --enviar: #ffffff;
+
+  --titulo-servicos: #161571;
+  --paragrafo-home: #161571;
+  --descricao-padrao: #000000;
+
+  --descricao-rede-delta-home: #cfab00;
+  --descricao-cases: #161571;
+  --aluno-ou-professor: #161571;
+}
