@@ -2,22 +2,22 @@
   font-size: 62.5%;
   /*fontes e tamanhos*/
   --h1-tamanho: 7.2rem;
-  --h1-fonte: Cinzel;
+  --h1-fonte: Cinzel; /*utilize com font-weight: bold*/
 
   --h2-tamanho: 3.6rem;
-  --h2-fonte: Cinzel;
+  --h2-fonte: Cinzel; /*utilize com font-weight: bold*/
 
   --h3-tamanho: 3rem;
-  --h3-fonte: Cinzel;
+  --h3-fonte: Cinzel; /*utilize com font-weight: bold*/
 
   --h4-tamanho: 2.4rem;
-  --h4-fonte: Cinzel;
+  --h4-fonte: Cinzel; /*utilize com font-weight: bold*/
 
   --botoes-tamanho: 2rem;
-  --botoes-fonte: Cinzel;
+  --botoes-fonte: Cinzel; /*utilize com font-weight: bold*/
 
   --header-tamanho: 1.8rem;
-  --header-fonte: Cinzel;
+  --header-fonte: Cinzel; /*utilize com font-weight: bold*/
 
   --footer-tamanho: 1.2rem;
   --footer-fonte: Montserrat;
@@ -41,16 +41,16 @@
   --descricao-contato-fonte: Montserrat;
 
   --subtitulo-banner-tamanho: 2.4rem;
-  --subtitulo-banner-fonte: Cinzel;
+  --subtitulo-banner-fonte: Cinzel; /*utilize com font-weight: bold*/
 
   --paragrafo-home-tamanho: 2.4rem;
   --paragrafo-home-fonte: Cinzel;
 
   --titulo-servicos-tamanho: 2.8rem;
-  --titulo-servicos-fonte: Cinzel;
+  --titulo-servicos-fonte: Cinzel; /*utilize com font-weight: bold*/
 
   --aluno-ou-professor-tamanho: 1.8rem;
-  --aluno-ou-professor-fonte: Cinzel;
+  --aluno-ou-professor-fonte: Cinzel; /*utilize com font-weight: bold*/
 
   /*cores*/
   --h1-home: #ffffff;
@@ -74,4 +74,53 @@
   --descricao-rede-delta-home: #cfab00;
   --descricao-cases: #161571;
   --aluno-ou-professor: #161571;
+}
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+  :root {
+    --h1-tamanho: 6.4rem;
+    --h2-tamanho: 3rem;
+    --h3-tamanho: 1.4rem;
+
+    --botoes-tamanho: 2rem;
+
+    --header-tamanho: 1.4rem;
+
+    --descricao-cases-tamanho: 2rem;
+
+    --subtitulo-banner-tamanho: 2rem;
+    --paragrafo-home-tamanho: 1.8rem;
+
+    --titulo-servicos-tamanho: 2.4rem;
+    --aluno-ou-professor-tamanho: 1.6rem;
+  }
+}
+
+/*mobile*/
+@media screen and (max-width: 480px) {
+  :root {
+    --h1-tamanho: 3.6rem;
+    --h2-tamanho: 1.8rem;
+    --h3-tamanho: 1.8rem;
+    --h4-tamanho: 1.4rem;
+
+    --botoes-tamanho: 1.4rem;
+
+    --header-tamanho: 1.8rem;
+    --footer-tamanho: 1.2rem;
+    --forms-tamanho: 1.2rem;
+    --enviar-tamanho: 1.8rem;
+    --dev-beets-tamanho: 1.1rem;
+
+    --descricao-padrao-tamanho: 1rem;
+    --descricao-cases-tamanho: 1rem;
+    --descricao-contato-tamanho: 1.8rem;
+
+    --subtitulo-banner-tamanho: 1.2rem;
+    --paragrafo-home-tamanho: 1.2rem;
+
+    --titulo-servicos-tamanho: 1.4rem;
+    --aluno-ou-professor-tamanho: 1.4rem;
+  }
 }
