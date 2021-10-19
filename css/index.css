@@ -1,0 +1,25 @@
+.titulo-secao {
+    font: bold var(--h2-tamanho) var(--h2-fonte), serif;
+    color: var(--h2-escuro);
+    position: relative;
+    text-align: center;
+    margin: var(--h2-tamanho) 0;
+}
+
+.titulo-secao::after {
+    --largura-linha: 100px;
+    content: '';
+    position: absolute;
+    background-color: var(--linha-titulo-secao-home);
+    width: var(--largura-linha);
+    height: 3px;
+    border-radius: 10px;
+    bottom: -0.5rem;
+    left: calc(50% - (var(--largura-linha) / 2)); /* posiciona a linha no meio do texto independente do tamanho dele */
+}
+
+@media screen and (max-width: 480px) {
+    .titulo-secao::after {
+        --largura-linha: 70px;
+    }
+}
