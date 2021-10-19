@@ -1,3 +1,4 @@
+/* Estilo Geral da página */
 .titulo-secao {
     font: bold var(--h2-tamanho) var(--h2-fonte), serif;
     color: var(--h2-escuro);
@@ -21,5 +22,23 @@
 @media screen and (max-width: 480px) {
     .titulo-secao::after {
         --largura-linha: 70px;
+    }
+}
+
+/* Seção Rede Delta */
+#rede-delta {
+    text-align: center;
+    padding: 0 10%;
+}
+
+.txt-rede-delta {
+    font: var(--paragrafo-home-tamanho) var(--paragrafo-home-fonte), serif;
+    color: var(--descricao-rede-delta-home);
+    margin-bottom: var(--paragrafo-home-tamanho);
+}
+
+@media screen and (max-width: 480px) {
+    #rede-delta {
+        padding: 0 5%;
     }
 }
