@@ -1,47 +1,55 @@
 /* INSCRIÇÃO ALUNOS E PROFESSORES */
-#rede-delta-alunos-prof {
+.rede-delta-alunos-prof {
     display: flex;
     flex-wrap: wrap;
     padding: 60px 0 60px 0;
     margin: 0 auto;
     max-width: 1024px;
-    align-items: flex-start;
 }
 
-.alunos-prof-elemento {
+.alunos-prof-item {
     flex: 1 1 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.alunos-prof-elemento p {
+.alunos-prof-item p {
     text-align: center;
     text-transform: uppercase;
-    margin: 40px 85px 40px 85px;
     color: var(--aluno-ou-professor);
     font-family: var(--aluno-ou-professor-fonte);
     font-weight: bold;
     font-size: var(--aluno-ou-professor-tamanho);
 }
 
-.alunos-prof-elemento img {
+.alunos-prof-item img {
     max-width: 100%;
     width: 120px;
     height: auto;
 }
 
-@media only screen and (max-width: 768px) {
-    #rede-delta-alunos-prof {
-        gap: 80px;
-    }
+.alunos-prof-item-desc {
+    height: 220px;
+    margin: 40px 85px 0 85px;
+}
 
-    .alunos-prof-elemento {
+@media only screen and (max-width: 768px) {
+    .alunos-prof-item {
         flex-basis: 100%;
     }
 
-    .alunos-prof-elemento p {
-        margin-left: 15%;
-        margin-right: 15%;
+    .alunos-prof-item-desc {
+        height: auto;
+        margin: 40px 30px 40px 30px;
+    }
+
+    .rede-delta-alunos-prof {
+        gap: 80px;
+    }
+    
+    .alunos-prof-item p {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
