@@ -63,6 +63,7 @@
 
   --cor-footer: #ffffff;
   --cor-header: #84b5be;
+  --cor-fundo-header: #D7EDF1;
   --cor-header-hover: #161571;
   --forms: #000000;
   --enviar: #ffffff;
@@ -123,4 +124,42 @@
     --titulo-servicos-tamanho: 1.4rem;
     --aluno-ou-professor-tamanho: 1.4rem;
   }
+}
+
+
+/* MENU */
+.cabecalho {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--cor-fundo-header);
+  padding: 2rem 0;
+}
+
+.logo {
+  height: 70px;
+}
+
+.menu {
+  display: flex;
+  font: bold var(--header-tamanho) var(--header-fonte), serif;
+  color: var(--cor-header);
+  text-transform: uppercase;
+}
+
+.menu-item > a, .menu-item > a:visited {
+  text-decoration: none;
+  color: var(--cor-header);
+}
+
+.menu-item a{
+  padding: 1.5rem;
+}
+
+.dropdown-menu {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
 }
