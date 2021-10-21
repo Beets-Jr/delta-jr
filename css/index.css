@@ -1,0 +1,48 @@
+.parceria-unicamp {
+    display: flex;
+    position: relative;
+    background-color: var(--cor-header);
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.img-parceria-unicamp{
+    width: 150px;
+}
+
+.titulo-parceria-unicamp{
+    font-family: var(--h2-fonte);
+    color: var(--h2-escuro);
+    font-weight: bold;
+    font-size: var(--h2-tamanho);
+} 
+
+.titulo-img-parceria-unicamp{
+    width: 250px;
+    height: auto;
+    float: left;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.desc-parceria-unicamp {
+    float: right;
+    color: var(--paragrafo-home);
+    font-size: var(--paragrafo-home-tamanho);
+    font-family: var(--descricao-padrao-fonte);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.class-fundo {
+    width:500px;
+    height: 130px;
+    margin-top:15px;
+    margin-left:100px;
+    border: 5px solid; /* As 4 bordas sólidas com 25px de espessura */
+    border-color: var(--h2-claro);
+    border-radius: 10px;
+}
