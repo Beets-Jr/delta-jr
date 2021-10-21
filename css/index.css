@@ -1,9 +1,17 @@
 .historia p{
     text-align: center;
-    font-family: Cinzel;
-    font-size: 2.4rem;
+    font-family: var(--paragrafo-home-fonte);
+    font-size: var(--paragrafo-home-tamanho);
 }
 
 .historia b{
     color: #161571;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .historia p{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
