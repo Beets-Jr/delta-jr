@@ -1,0 +1,54 @@
+.por-que-nos-contratar h2{
+    text-align: center;
+    font-family: var(--h2-fonte);
+    font-size: var(--h2-tamanho);
+    color: var(--h2-escuro);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.por-que-nos-contratar h2::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--h4-chamada-servicos);
+  margin: 14px auto 10px auto;
+}
+
+.lista-icones{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.lista-icones li{
+  background-color: var(--cor-header);
+  border-radius: 50%;
+  height: 145px;
+  width: 145px;
+}
+
+.lista-icones li img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.lista-textos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    align-items: baseline;
+}
+
+.lista-textos li{
+    text-transform: uppercase;
+    font-family: var(--h2-fonte);
+    font-size: var(--h2-tamanho);
+    font-weight: bold;
+    color: var(--h2-escuro);
+    padding: 30px 0;
+    background-color: aqua;
+}
