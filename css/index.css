@@ -18,6 +18,7 @@
   height: 5px;
   background: var(--h4-chamada-servicos);
   margin: 14px auto 10px auto;
+  border-radius: 10px;
 }
 
 /* Lista de ícones */
@@ -48,7 +49,7 @@
 .lista-textos ul{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 40px;
+    margin: 40px 5%;
     align-items: center;
 }
 
@@ -74,4 +75,15 @@
     .por-que-nos-contratar h2{
         font-size: var(--h2-tamanho);
     }
+
+    .lista-icones ul li{
+        height: 100px;
+        width: 100px;
+    }
+
+    .lista-icones li img {
+        margin-top: 15px;
+    }
+
+    
 }
