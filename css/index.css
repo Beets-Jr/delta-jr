@@ -10,45 +10,45 @@
 .por-que-nos-contratar h2::after{
   content: "";
   display: block;
-  width: 60px;
-  height: 3px;
+  width: 100px;
+  height: 5px;
   background: var(--h4-chamada-servicos);
   margin: 14px auto 10px auto;
 }
 
-.lista-icones{
+.lista-icones ul{
   display: flex;
   justify-content: space-evenly;
   margin-top: 40px;
 }
 
-.lista-icones li{
+.lista-icones ul li{
   background-color: var(--cor-header);
   border-radius: 50%;
   height: 145px;
   width: 145px;
 }
 
-.lista-icones li img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
+.lista-icones li img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 70%;
 }
 
-.lista-textos{
+.lista-textos ul{
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
-    align-items: baseline;
+    align-items: center;
 }
 
-.lista-textos li{
+.lista-textos ul li p{
+    text-align: center;
     text-transform: uppercase;
     font-family: var(--h2-fonte);
     font-size: var(--h2-tamanho);
     font-weight: bold;
     color: var(--h2-escuro);
-    padding: 30px 0;
-    background-color: aqua;
 }
