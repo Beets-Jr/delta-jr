@@ -1,3 +1,7 @@
+/* Por que nos contratar?*/
+
+/* Por que nos contratar? - título*/
+
 .por-que-nos-contratar h2{
     text-align: center;
     font-family: var(--h2-fonte);
@@ -15,6 +19,8 @@
   background: var(--h4-chamada-servicos);
   margin: 14px auto 10px auto;
 }
+
+/* Lista de ícones */
 
 .lista-icones ul{
   display: flex;
@@ -37,6 +43,8 @@
     max-width: 70%;
 }
 
+/* Lista de textos */
+
 .lista-textos ul{
     display: flex;
     justify-content: space-evenly;
@@ -51,4 +59,19 @@
     font-size: var(--h2-tamanho);
     font-weight: bold;
     color: var(--h2-escuro);
+}
+
+
+/*tablet*/
+@media screen and (max-width: 768px){
+    .por-que-nos-contratar h2{
+        font-size: var(--h2-tamanho);
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 480px){
+    .por-que-nos-contratar h2{
+        font-size: var(--h2-tamanho);
+    }
 }
