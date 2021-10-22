@@ -1,8 +1,12 @@
 /*Acessoria - Omu*/
+.acessoria-omu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .titulo {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
@@ -29,6 +33,7 @@
 
 .paragrafo {
   align-self: center;
+  max-width: 780px;
 }
 
 .paragrafo p {
