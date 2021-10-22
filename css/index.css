@@ -1,17 +1,27 @@
+/* História */
+
 .historia p{
     text-align: center;
     font-family: var(--paragrafo-home-fonte);
     font-size: var(--paragrafo-home-tamanho);
+    margin: auto 200px;        
 }
 
+/* trechos em negrito */
 .historia b{
     color: #161571;
-    font-weight: bold;
 }
 
+/* tablet */
 @media screen and (max-width: 768px){
     .historia p{
-        padding-left: 10px;
-        padding-right: 10px;
+        margin: auto 140px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+    .historia p{
+        margin: auto 30px;
     }
 }
