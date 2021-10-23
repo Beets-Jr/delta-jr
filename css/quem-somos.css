@@ -1,0 +1,89 @@
+.entendaMais{
+    width: 95%;
+    margin: 150px auto 0 auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.entendaMais .titulo{
+    color:var(--h2-claro);
+    font-size: var(--h2-tamanho);
+    font-family: var(--h2-fonte);
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.entendaMais .container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.entendaMais .container .conteudo{
+    max-width: 400px;
+    padding: 30px;
+}
+
+.entendaMais .container .conteudo .titulo{
+    color:var(--h3);
+    font-size: var(--h3-tamanho);
+    font-family: var(--h3-fonte);
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.entendaMais .container .conteudo .texto{
+    color:var(--descricao-padrao);
+    font-size: var(--descricao-padrao-tamanho);
+    font-family: var(--descricao-padrao-fonte);
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 17px;
+}
+
+.entendaMais .container .conteudo:first-child{
+    background-color: #D7EDF1;
+    border-radius: 30px;
+}
+
+.entendaMais .logoBJ{
+    margin-top: 50px;
+}
+
+
+/*tablet*/
+
+@media (max-width:768px){
+    .entendaMais .container .conteudo{
+        padding: 20px;
+    }
+
+    .entendaMais .logoBJ{
+        width: 250px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:480px){
+    .entendaMais .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .entendaMais .container .conteudo{
+        max-width: 300px;
+    }
+}
+
+
+
+
