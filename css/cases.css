@@ -1,0 +1,31 @@
+.matematrik-container{
+    background: #D7EDF1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 243px;
+    padding-left: 243px;
+}
+#img-matematrik{
+    height: 200px;
+    width: 232px;
+    align-self: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+#matematrik-title{
+    font-family: var(--h2-fonte);
+    color: var(--h2-escuro);
+    font-weight: bold;
+    font-size: var(--h2-tamanho);
+    margin-top: 50px;
+}
+
+.paragrafo-matematrik{
+    font-family: var(--descricao-cases-fonte);
+    color: var(--descricao-cases);
+    font-size: var(--descricao-cases-tamanho);
+    text-transform: uppercase;
+}
