@@ -1,5 +1,4 @@
 .container {
-  width: 800px;
   margin: 0 auto;
   padding: 0px;
   position: relative;
@@ -16,13 +15,13 @@
   font-size: 72px;
   text-align: center;
   margin-top: 100px;
-  color: #055d7c;
+  color: var(--h1-padrao);
 }
 .descricao-servicos {
   text-align: center;
-  font-family: descricao-padrao-fonte;
-  font-size: descricao-padrao-tamanho; /*arrumar*/
-  color: descricao-padrao;
+  font-family: var(--descricao-padrao-fonte);
+  font-size: var(--descricao-padrao-tamanho); /*arrumar*/
+  color: var(--descricao-padrao);
 }
 .container-produtos{
   display: flex;
@@ -89,20 +88,17 @@
 }
 @media only screen and (min-width: 788px) and (max-width: 979px) {
   .container {
-    width: 80%;
-  }
-  .intro {
-    height: 260px;
-    padding-top: 30px;
+    padding: 0 10%;
   }
 }
 @media screen and (max-width: 787px) {
   .container {
-    width: 80%;
+    padding: 0 10%;
   }
-  .intro {
-    height: 260px;
-    padding-top: 30px;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10%;
   }
   .container-produtos .logo-produtos img{
     width: 115px;
