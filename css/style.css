@@ -156,7 +156,7 @@
   width: 50%;
   height: 4px;
   top: 0;
-  left: 0;
+  left: 50%;
 }
 
 /* linha de baixo */
@@ -167,5 +167,5 @@
   width: 50%;
   height: 4px;
   bottom: 0;
-  left: 50%;
+  left: 0;
 }
