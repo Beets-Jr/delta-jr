@@ -1,4 +1,5 @@
 .container {
+  width: 800px;
   margin: 0 auto;
   padding: 0px;
   position: relative;
@@ -15,27 +16,98 @@
   font-size: 72px;
   text-align: center;
   margin-top: 100px;
-  color: var(--h1-padrao);
+  color: #055d7c;
 }
 .descricao-servicos {
   text-align: center;
-  font-family: var(--descricao-padrao-fonte);
-  font-size: var(--descricao-padrao-tamanho); /*arrumar*/
-  color: var(--descricao-padrao);
+  font-family: descricao-padrao-fonte;
+  font-size: descricao-padrao-tamanho; /*arrumar*/
+  color: descricao-padrao;
 }
-
+.container-produtos{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.container-produtos div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+}
+.container-produtos .logo-produtos{
+  font-family: var(--h2-fonte);
+  font-size: var(--h2-tamanho);
+  color: var(--h2-claro);
+  height: unset;
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+}
+.container-produtos .logo-produtos h2{
+  margin-top: 50px;
+}
+.container-desc-produtos::after{
+  content: "";
+  display: block;
+  background-color: #29AAE3;
+  height: 2px;
+  width: 65%;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 15px;
+}
+.container-desc-produtos:hover{
+  background-color: #D7EDF1;
+  border-radius: 30px;
+  transition: .5s;
+}
+.container-produtos div h3{
+  font-family: var(--h3-fonte);
+  font-size: var(--h3-tamanho);
+  font-weight: bold;
+  color: var(--h3);
+  padding-left: 15px;
+}
+.container-produtos div p{
+  font-family: var(--descricao-padrao);
+  font-size: var(--descricao-padrao-tamanho);
+  color: var(--descricao-padrao);
+  padding-right: 15px;
+}
+.container-chamada-servicos{
+  font-family: var(--h4-fonte);
+  font-size: var(--h4-tamanho);
+  color: var(--h4-chamada-servicos);
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 75px;
+}
 @media only screen and (min-width: 788px) and (max-width: 979px) {
   .container {
-    padding: 0 10%;
+    width: 80%;
+  }
+  .intro {
+    height: 260px;
+    padding-top: 30px;
   }
 }
 @media screen and (max-width: 787px) {
   .container {
-    padding: 0 10%;
+    width: 80%;
   }
-}
-@media screen and (max-width: 480px) {
-  .container {
-    padding: 0 10%;
+  .intro {
+    height: 260px;
+    padding-top: 30px;
+  }
+  .container-produtos .logo-produtos img{
+    width: 115px;
+  }
+  .container-chamada-servicos{
+    margin-top: 20px;
   }
 }
