@@ -1,5 +1,4 @@
 .container {
-  width: 800px;
   margin: 0 auto;
   padding: 0px;
   position: relative;
@@ -13,36 +12,33 @@
 }
 
 .intro h1 {
-  font-family: h1-fonte;
+  font-family: var(--h1-fonte);
   text-transform: uppercase;
   font-size: 7.2rem; /*arrumar  os tamanhos*/
-  color: #055d7c;
+  color: var(--h1-padrao);
   text-align: center;
   margin-top: 110px;
 }
 
 .descricao-servicos {
   text-align: center;
-  font-family: descricao-padrao-fonte;
-  font-size: descricao-padrao-tamanho;
-  color: descricao-padrao;
+  font-family: var(--descricao-padrao-fonte);
+  font-size: var(--descricao-padrao-tamanho);
+  color: var(--descricao-padrao);
 }
 
 @media only screen and (min-width: 788px) and (max-width: 979px) {
   .container {
-    width: 500px;
-  }
-  .intro {
-    height: 260px;
-    padding-top: 30px;
+    padding: 0 10%;
   }
 }
 @media screen and (max-width: 787px) {
   .container {
-    width: 500px;
+    padding: 0 10%;
   }
-  .intro {
-    height: 260px;
-    padding-top: 30px;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10%;
   }
 }
