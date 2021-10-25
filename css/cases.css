@@ -1,0 +1,63 @@
+/* E-aulas */
+.e-aulas h2 {
+   font-family: var(--h2-fonte);
+   color: var(--h2-escuro);
+   font-size: var(--h2-tamanho);
+   text-transform: uppercase;
+   text-align: center;
+   margin: 0 0 40px 0;
+}
+
+.e-aulas-img {
+   display: flex;
+   justify-content: center;
+}
+
+.e-aulas img {
+   max-width: 300px;
+   align-self: center;
+}
+
+.e-aulas-paragrafo {
+   max-width: 780px;
+   margin: 0 auto;
+}
+
+.e-aulas-paragrafo p {
+   font-family: var(--descricao-cases-fonte);
+   font-size: var(--descricao-cases-tamanho);
+   color: var(--descricao-cases);
+   margin: 70px 10px 0 10px;
+   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+   .e-aulas h2 {
+      font-size: var(--h2-tamanho);
+   }
+
+   .e-aulas-paragrafo p {
+      font-size: var(--descricao-cases-tamanho);
+      padding: 0 40px 0 40px;
+      margin: 50px 10px 0 10px;
+      font-weight: bold;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .e-aulas h2 {
+      font-size: var(--h2-tamanho);
+      margin: 0 0 10px 0;
+   }
+
+   .e-aulas img {
+      max-width: 150px;
+   }
+
+   .e-aulas-paragrafo p {
+      font-size: var(--descricao-cases-tamanho);
+      padding: 0 10px 0 10px;
+      margin: 20px 10px 0 10px;
+      font-weight: bold;
+   }
+}
