@@ -1,0 +1,133 @@
+
+/* css parceria-unicamp */
+
+.parceria-unicamp {
+    display: flex;
+    background-color: var(--fundo-azul-home);
+    padding: 6rem 12%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-parceria-unicamp{
+    width: 150px;
+    align-self: center;
+}
+
+.titulo-parceria-unicamp{
+    font-family: var(--h2-fonte);
+    color: var(--h2-escuro);
+    font-weight: bold;
+    font-size: var(--h2-tamanho);
+    width: 400px;
+} 
+
+.titulo-img-parceria-unicamp{
+    width: 35%;
+    height: auto;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-parceria-unicamp {
+    color: var(--paragrafo-home);
+    font-size: var(--paragrafo-home-tamanho);
+    font-family: var(--descricao-padrao-fonte);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.borda-desc-parceria-unicamp {
+    width: 470px;
+    margin-top:15px;
+    border: 3px solid; 
+    border-color: var(--cor-header);
+    border-radius: 10px;
+}
+
+/* css parceria-unicamp tablet e mobile */
+
+@media only screen and (max-width: 1200px){
+
+    .borda-desc-parceria-unicamp {
+        width:370px;
+    }
+}
+
+@media only screen and (max-width: 1070px){
+
+    .borda-desc-parceria-unicamp {
+        width:340px;
+    }
+
+    .titulo-img-parceria-unicamp{
+        width: 32%;
+    }
+
+    .titulo-parceria-unicamp{
+        width: 200px;
+    } 
+   
+}
+
+@media only screen and (max-width: 770px){
+
+    .borda-desc-parceria-unicamp {
+        width:270px;
+    }
+
+    .titulo-img-parceria-unicamp{
+        width: 38%;
+    }   
+
+    .parceria-unicamp {
+        padding: 6rem 12%;
+    }
+    
+}
+
+@media only screen and (max-width: 585px){
+
+    .parceria-unicamp {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 6rem 0%;
+    }
+
+    .borda-desc-parceria-unicamp {
+        width:300px;
+    }
+
+    .titulo-img-parceria-unicamp{
+        flex-direction: column-reverse;
+    }
+
+    .titulo-parceria-unicamp{
+        width: 400px;
+        margin-bottom: 4rem;
+    } 
+
+}
+
+@media only screen and (max-width: 475px){
+
+    .borda-desc-parceria-unicamp {
+        width:200px;
+    }
+
+    .titulo-parceria-unicamp{
+        width: 200px;
+        margin-bottom: 1rem;
+    } 
+
+    .img-parceria-unicamp{
+        width: 120px;
+    }
+    
+}
