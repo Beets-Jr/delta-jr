@@ -9,7 +9,7 @@
 
 /* trechos em negrito */
 .historia b{
-    color: #161571;
+    color: var(--paragrafo-home);
 }
 
 /* tablet */
