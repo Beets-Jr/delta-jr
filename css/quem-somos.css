@@ -51,7 +51,7 @@
     line-height: 17px;
 }
 
-.entendaMais .container .conteudo:first-child{
+.entendaMais .container .conteudo:hover{
     background-color: #D7EDF1;
     border-radius: 30px;
 }
