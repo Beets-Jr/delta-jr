@@ -46,6 +46,10 @@
 }
 
 @media (max-width:480px){
+    .mascote .titulo:nth-child(2){
+        margin-bottom: 5px;
+    }
+
     .mascote .container{
         flex-direction: column-reverse;
     }
