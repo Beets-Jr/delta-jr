@@ -11,11 +11,14 @@
   padding-top: 30px;
 }
 .intro h1 {
-  font-family: h1-fonte;
-  font-size: 72px;
+  font-family: var(--h1-fonte);
+  font-size: var(--h1-tamanho);
+  text-transform: uppercase;
   text-align: center;
   margin-top: 100px;
   color: var(--h1-padrao);
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .descricao-servicos {
   text-align: center;
