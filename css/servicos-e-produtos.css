@@ -37,7 +37,10 @@
   align-items: center;
   height: 78px;
 }
-.container-produtos .logo-produtos{
+.container-produtos div:not(:nth-child(02)){
+  margin-top: 30px;
+}
+.container-produtos div.logo-produtos{
   font-family: var(--h2-fonte);
   font-size: var(--h2-tamanho);
   color: var(--h2-claro);
