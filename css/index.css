@@ -25,6 +25,32 @@
     }
 }
 
+/* História */
+.historia p{
+    text-align: center;
+    font-family: var(--paragrafo-home-fonte);
+    font-size: var(--paragrafo-home-tamanho);
+    margin: 40px 200px;
+}
+
+/* trechos em negrito */
+.historia b{
+    color: var(--paragrafo-home);
+}
+
+/* tablet */
+@media screen and (max-width: 768px){
+    .historia p{
+        margin: 40px 100px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+    .historia p{
+        margin: 40px 30px;
+}
+
 /* Seção Rede Delta */
 #rede-delta {
     text-align: center;
@@ -42,8 +68,7 @@
         padding: 0 5%;
     }
 
-/* css parceria-unicamp */
-
+/* Parceria unicamp */
 .parceria-unicamp {
     display: flex;
     background-color: var(--fundo-azul-home);
@@ -93,7 +118,7 @@
     border-radius: 10px;
 }
 
-/* css parceria-unicamp tablet e mobile */
+/* Parceria unicamp tablet e mobile */
 
 @media only screen and (max-width: 1200px){
 
