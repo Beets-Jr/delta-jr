@@ -23,20 +23,20 @@
 
 /* Lista de ícones */
 
-.lista-icones ul{
+.container{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 40px;
+  margin-top: 40px;  
 }
 
-.lista-icones ul li{
+.item {
   background-color: var(--cor-header);
   border-radius: 50%;
   height: 145px;
   width: 145px;
 }
 
-.lista-icones li img {
+.item img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -45,21 +45,14 @@
 }
 
 /* Lista de textos */
-
-.lista-textos ul{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 40px 5%;
-    align-items: center;
-}
-
-.lista-textos ul li p{
+.item p{
     text-align: center;
     text-transform: uppercase;
     font-family: var(--h2-fonte);
     font-size: var(--h4-tamanho);
     font-weight: bold;
     color: var(--h2-escuro);
+    margin: 60px 2%;
 }
 
 
@@ -76,12 +69,12 @@
         font-size: var(--h2-tamanho);
     }
 
-    .lista-icones ul li{
+    .item{
         height: 100px;
         width: 100px;
     }
 
-    .lista-icones li img {
+    .item img {
         margin-top: 15px;
     }
 
