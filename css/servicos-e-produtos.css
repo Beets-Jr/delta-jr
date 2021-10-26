@@ -37,7 +37,10 @@
   align-items: center;
   height: 78px;
 }
-.container-servicos .logo-servicos{
+.container-servicos div:not(:nth-child(02)){
+  margin-top: 30px;
+}
+.container-servicos div.logo-servicos{
   font-family: var(--h2-fonte);
   font-size: var(--h2-tamanho);
   color: var(--h2-claro);
