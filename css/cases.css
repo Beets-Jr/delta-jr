@@ -50,11 +50,31 @@
   .paragrafo p {
     font-size: var(--descricao-cases-tamanho);
   }
+
+  .titulo {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .paragrafo {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 
 /*Responsividade celular*/
 @media screen and (max-width: 480px) {
   .paragrafo p {
     font-size: var(--descricao-cases-tamanho);
+  }
+
+  .titulo {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+
+  .paragrafo {
+    margin-left: 110px;
+    margin-right: 110px;
   }
 }
