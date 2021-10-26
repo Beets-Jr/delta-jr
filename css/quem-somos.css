@@ -7,14 +7,16 @@
 }
 
 .mascote .titulo{
-    color: var(--h2-escuro);
+    color: var(--h2-claro);
     font-size: var(--h2-tamanho);
     font-family: var(--h2-fonte);
+    text-transform: uppercase;
 }
 
 .mascote .titulo:nth-child(2){
-    color:var(--h2-claro);
+    color:var(--h2-escuro);
     margin-bottom: 55px;
+    text-transform: uppercase;
 }
 
 .mascote .container{
@@ -51,7 +53,6 @@
     .mascote .container .texto{
         text-align: center;
         max-width: 179px;
-        /* background-color:cornflowerblue; */
     }
 
     .mascote .container .logoDelta{
