@@ -1,0 +1,63 @@
+.nossos-cases {
+    padding: 60px 0 60px 0;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.nossos-cases-container {
+    display: flex; 
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 30px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.nossos-case-elemento {
+    width: 350px;      
+}
+
+.nossos-case-elemento img {
+    width: 200px;
+    height: auto;
+}
+
+.nossos-case-elemento p {
+   font-family: var(--h3-fonte);
+   font-size: var(--h3-tamanho) ;
+   color: var(--h3);
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .nossos-cases-container {
+        gap: 10px;
+    }
+
+    .nossos-case-elemento {
+        width: 35%;
+        margin-bottom: 20px;
+    }
+
+    .nossos-case-elemento img {
+        width: 150px;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+    .nossos-case-elemento {
+        flex-basis: 100%;
+    }
+
+    .nossos-cases-container {
+        gap: 20px;
+    }
+
+    .nossos-case-elemento p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
