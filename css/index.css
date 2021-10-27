@@ -47,7 +47,6 @@
 /* Lista de textos */
 .item p{
     text-align: center;
-    text-transform: uppercase;
     font-family: var(--h2-fonte);
     font-size: var(--h4-tamanho);
     font-weight: bold;
