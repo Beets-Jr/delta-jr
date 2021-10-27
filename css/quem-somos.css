@@ -10,13 +10,11 @@
     color: var(--h2-claro);
     font-size: var(--h2-tamanho);
     font-family: var(--h2-fonte);
-    text-transform: uppercase;
 }
 
 .mascote .titulo:nth-child(2){
     color:var(--h2-escuro);
     margin-bottom: 55px;
-    text-transform: uppercase;
 }
 
 .mascote .container{
@@ -66,7 +64,7 @@
 
 .entendaMais{
     width: 95%;
-    margin: 150px auto 0 auto;
+    margin: 80px auto 0 auto;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -79,15 +77,15 @@
     font-family: var(--h2-fonte);
     font-weight: bold;
     font-style: normal;
-    text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .entendaMais .container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
+    gap: 90px;
 }
 
 .entendaMais .container .conteudo{
@@ -101,7 +99,6 @@
     font-family: var(--h3-fonte);
     font-weight: bold;
     font-style: normal;
-    text-transform: uppercase;
     text-align: center;
     
 }
@@ -130,6 +127,10 @@
 /*tablet*/
 
 @media (max-width:768px){
+    .entendaMais .container {
+        gap: 5px;
+    }
+
     .entendaMais .container .conteudo{
         padding: 20px;
     }
@@ -141,6 +142,10 @@
 }
 
 @media (max-width:480px){
+    .entendaMais {
+        margin-top: 50px;
+    }
+    
     .entendaMais .container{
         flex-direction: column;
         align-items: center;
