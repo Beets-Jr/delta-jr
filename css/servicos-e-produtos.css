@@ -26,6 +26,65 @@
   font-size: var(--descricao-padrao-tamanho); /*arrumar*/
   color: var(--descricao-padrao);
 }
+.container-servicos{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 1250px;
+}
+.container-servicos div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+}
+.container-servicos div:not(:nth-child(02)){
+  margin-top: 30px;
+}
+.container-servicos div.logo-servicos{
+  font-family: var(--h2-fonte);
+  font-size: var(--h2-tamanho);
+  color: var(--h2-claro);
+  height: unset;
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+}
+.container-servicos .logo-servicos h2{
+  margin-top: 50px;
+}
+.container-desc-servicos::after{
+  content: "";
+  display: block;
+  background-color: #29AAE3;
+  height: 2px;
+  width: 65%;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 15px;
+  max-width: 935px;
+}
+.container-desc-servicos:hover{
+  background-color: #D7EDF1;
+  border-radius: 30px;
+  transition: .5s;
+}
+.container-servicos div h3{
+  font-family: var(--h3-fonte);
+  font-size: var(--h3-tamanho);
+  font-weight: bold;
+  color: var(--h3);
+  padding-left: 15px;
+}
+.container-servicos div p{
+  font-family: var(--descricao-padrao);
+  font-size: var(--descricao-padrao-tamanho);
+  color: var(--descricao-padrao);
+  padding-right: 15px;
+}
 
 @media only screen and (min-width: 788px) and (max-width: 979px) {
   .container {
@@ -40,5 +99,8 @@
 @media screen and (max-width: 480px) {
   .container {
     padding: 0 10%;
+  }
+  .container-servicos .logo-servicos img{
+    width: 115px;
   }
 }
