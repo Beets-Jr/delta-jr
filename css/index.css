@@ -1,23 +1,5 @@
 /* Por que nos contratar?*/
 
-/* Por que nos contratar? - título*/
-
-    text-align: center;
-    font-family: var(--h2-fonte);
-    font-size: var(--h2-tamanho);
-    color: var(--h2-escuro);
-    font-weight: bold;
-}
-
-.por-que-nos-contratar h2::after{
-  content: "";
-  display: block;
-  width: 100px;
-  height: 5px;
-  background: var(--h4-chamada-servicos);
-  margin: 14px auto 10px auto;
-  border-radius: 10px;
-}
 
 /* Lista de ícones */
 
@@ -52,20 +34,8 @@
     margin: 60px 2%;
 }
 
-
-/*tablet*/
-@media screen and (max-width: 768px){
-    .por-que-nos-contratar h2{
-        font-size: var(--h2-tamanho);
-    }
-}
-
 /*mobile*/
 @media screen and (max-width: 480px){
-    .por-que-nos-contratar h2{
-        font-size: var(--h2-tamanho);
-    }
-
     .item{
         height: 100px;
         width: 100px;
