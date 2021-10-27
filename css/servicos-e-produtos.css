@@ -16,7 +16,6 @@
 .intro h1 {
   font-family: var(--h1-fonte);
   font-size: var(--h1-tamanho);
-  text-transform: uppercase;
   text-align: center;
   margin-top: 100px;
   color: var(--h1-padrao);
@@ -94,7 +93,7 @@
 }
 
 .container-servicos div p{
-  font-family: var(--descricao-padrao);
+  font-family: var(--descricao-padrao-fonte);
   font-size: var(--descricao-padrao-tamanho);
   color: var(--descricao-padrao);
   padding-right: 15px;
@@ -184,7 +183,7 @@
 }
 
 .container-produtos div p{
-  font-family: var(--descricao-padrao);
+  font-family: var(--descricao-padrao-fonte);
   font-size: var(--descricao-padrao-tamanho);
   color: var(--descricao-padrao);
   padding-right: 15px;
