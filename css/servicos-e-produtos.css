@@ -29,6 +29,7 @@
   width: 85%;
   margin: 0 auto;
   margin-top: 40px;
+  max-width: 1250px;
 }
 .container-servicos div{
   display: grid;
@@ -61,6 +62,7 @@
   position: absolute;
   margin-top: 75px;
   margin-left: 15px;
+  max-width: 935px;
 }
 .container-desc-servicos:hover{
   background-color: #D7EDF1;
