@@ -14,7 +14,7 @@
 .intro h1 {
   font-family: var(--h1-fonte);
   text-transform: uppercase;
-  font-size: 7.2rem; /*arrumar  os tamanhos*/
+  font-size: var(--h1-tamanho);
   color: var(--h1-padrao);
   text-align: center;
   margin-top: 110px;
