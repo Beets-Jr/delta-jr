@@ -123,17 +123,17 @@
     display: flex;
     background-color: var(--fundo-azul-home);
     padding: 6rem 12%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 80px;
+    gap: 30px;
 }
 
-.img-parceria-unicamp {
+.img-parceria-unicamp{
     width: 150px;
     align-self: center;
 }
 
-.titulo-parceria-unicamp {
+.titulo-parceria-unicamp{
     font-family: var(--h2-fonte);
     color: var(--h2-escuro);
     font-weight: bold;
@@ -141,7 +141,7 @@
     width: 400px;
 } 
 
-.titulo-img-parceria-unicamp {
+.titulo-img-parceria-unicamp{
     width: 35%;
     height: auto;
     text-transform: uppercase;
@@ -155,7 +155,7 @@
 .desc-parceria-unicamp {
     color: var(--paragrafo-home);
     font-size: var(--paragrafo-home-tamanho);
-    font-family: var(--paragrafo-home-fonte);
+    font-family: var(--descricao-padrao-fonte);
     text-transform: uppercase;
     text-align: center;
     padding: 1.5rem;
@@ -169,15 +169,17 @@
     border-radius: 10px;
 }
 
-/* Parceria unicamp tablet e mobile */
+/* css parceria-unicamp tablet e mobile */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px){
+
     .borda-desc-parceria-unicamp {
         width:370px;
     }
 }
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1070px){
+
     .borda-desc-parceria-unicamp {
         width:340px;
     }
@@ -189,9 +191,11 @@
     .titulo-parceria-unicamp{
         width: 200px;
     } 
+
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 770px){
+
     .borda-desc-parceria-unicamp {
         width:270px;
     }
@@ -203,15 +207,16 @@
     .parceria-unicamp {
         padding: 6rem 12%;
     }
+
 }
 
-@media only screen and (max-width: 585px) {
+@media only screen and (max-width: 585px){
+
     .parceria-unicamp {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         padding: 6rem 0%;
-        gap: 0;
     }
 
     .borda-desc-parceria-unicamp {
@@ -226,9 +231,11 @@
         width: 400px;
         margin-bottom: 4rem;
     } 
+
 }
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 475px){
+
     .borda-desc-parceria-unicamp {
         width:200px;
     }
@@ -241,4 +248,5 @@
     .img-parceria-unicamp{
         width: 120px;
     }
+
 }
