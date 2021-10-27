@@ -8,7 +8,6 @@
     font-size: var(--h2-tamanho);
     color: var(--h2-escuro);
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 .por-que-nos-contratar h2::after{
