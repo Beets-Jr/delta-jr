@@ -9,7 +9,6 @@
    color: var(--h2-escuro);
    font-size: var(--h2-tamanho);
    font-family: var(--h2-fonte);
-   text-transform: uppercase;
    text-align: center;
    margin: 100px 0;
 }
@@ -19,7 +18,6 @@
    font-size: var(--aluno-ou-professor-tamanho);
    font-family: var(--aluno-ou-professor-fonte);
    font-weight: bold;
-   text-transform: uppercase;
    margin: .3em 0;
 }
 
