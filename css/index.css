@@ -155,7 +155,7 @@
 .desc-parceria-unicamp {
     color: var(--paragrafo-home);
     font-size: var(--paragrafo-home-tamanho);
-    font-family: var(--descricao-padrao-fonte);
+    font-family: var(--paragrafo-home-fonte);
     text-transform: uppercase;
     text-align: center;
     padding: 1.5rem;
