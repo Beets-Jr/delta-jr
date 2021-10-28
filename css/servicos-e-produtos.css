@@ -19,8 +19,8 @@
   text-align: center;
   margin-top: 100px;
   color: var(--h1-padrao);
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 .descricao-servicos {
@@ -99,15 +99,31 @@
   padding-right: 15px;
 }
 
-@media only screen and (min-width: 788px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
   .container {
     padding: 0 10%;
+  }
+
+  .container-servicos div{
+    height: 120px;
+  }
+
+  .container-desc-servicos::after{
+    margin-top: 115px;
   }
 }
 
 @media screen and (max-width: 787px) {
   .container {
     padding: 0 10%;
+  }
+
+  .container-servicos div{
+    height: 110px;
+  }
+
+  .container-desc-servicos::after{
+    margin-top: 100px;
   }
 }
 
@@ -136,6 +152,16 @@
   justify-content: space-between;
   align-items: center;
   height: 78px;
+}
+
+.container-chamada-servicos{
+  font-family: var(--h4-fonte);
+  font-size: var(--h4-tamanho);
+  color: var(--h4-chamada-servicos);
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 75px;
 }
 
 .container-produtos div:not(:nth-child(02)){
@@ -189,25 +215,31 @@
   padding-right: 15px;
 }
 
-.container-chamada-servicos{
-  font-family: var(--h4-fonte);
-  font-size: var(--h4-tamanho);
-  color: var(--h4-chamada-servicos);
-  text-align: center;
-  width: 55%;
-  margin: 0 auto;
-  margin-top: 75px;
-}
-
-@media only screen and (min-width: 788px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
   .container {
     padding: 0 10%;
+  }
+
+  .container-produtos div{
+    height: 120px;
+  }
+
+  .container-desc-produtos::after{
+    margin-top: 115px;
   }
 }
 
 @media screen and (max-width: 787px) {
   .container {
     padding: 0 10%;
+  }
+
+  .container-produtos div{
+    height: 115px;
+  }
+
+  .container-desc-produtos::after{
+    margin-top: 115px;
   }
 }
 
@@ -218,7 +250,8 @@
   .container-produtos .logo-produtos img{
     width: 115px;
   }
+
   .container-chamada-servicos{
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
