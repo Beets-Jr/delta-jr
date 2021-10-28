@@ -1,0 +1,108 @@
+/* Nossos professores */
+.infos-nossos-professores {
+   display: flex;
+   justify-content: space-evenly;
+   margin: 150px auto;
+}
+
+.nossos-professores h2 {
+   color: var(--h2-escuro);
+   font-size: var(--h2-tamanho);
+   font-family: var(--h2-fonte);
+   text-transform: uppercase;
+   text-align: center;
+   margin: 100px 0;
+}
+
+.nossos-professores ul li {
+   color: var(--aluno-ou-professor);
+   font-size: var(--aluno-ou-professor-tamanho);
+   font-family: var(--aluno-ou-professor-fonte);
+   font-weight: bold;
+   text-transform: uppercase;
+   margin: .3em 0;
+}
+
+.img-nossos-professores {
+   border-radius: 150px;
+   max-width: 250px;
+   max-height: 250px;
+   width: auto;
+   height: auto;
+}
+
+.estrelas {
+   text-align: center;
+   margin-top: 60px;
+}
+
+.estrelas input[type=radio] {
+  display: none;
+}
+
+.estrelas label i.fa{
+  font-size: 2.5em;
+  margin: 0 15px;
+}
+
+.estrelas label i.fa::before {
+  content:'\f005';
+  color: #FC0;
+  font-weight: 100;
+  font-size: 35px;
+}
+
+/* Nossos professores tablet */
+@media screen and (max-width: 768px) {
+   .infos-nossos-professores {
+      margin: 70px auto;
+   }
+
+   .img-nossos-professores {
+      max-width: 160px;
+      max-height: 160px;
+   }
+
+   .estrelas {
+      margin-top: 40px;
+   }
+
+   .estrelas label i.fa{
+      font-size: 2.5em;
+      margin: 0 10px;
+   }
+
+   .estrelas label i.fa::before {
+      font-size: 25px;
+   }
+}
+
+/* Nossos professores mobile */
+@media screen and (max-width: 480px) {
+   .nossos-professores {
+      padding: 15px;
+   }
+
+   .infos-nossos-professores {
+      flex-direction: column;
+      align-items: center;
+      margin: 40px auto;
+   }
+
+   .img-nossos-professores {
+      margin: 0 auto 10px auto;
+   }
+
+   .estrelas {
+      margin-top: 10px;
+   }
+
+   .estrelas label i.fa{
+      font-size: 2.5em;
+      margin: 0 5px;
+   }
+
+   .estrelas label i.fa::before {
+      font-size: 15px;
+   }
+}
