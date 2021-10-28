@@ -25,7 +25,7 @@
 }
 
 .mascote .container .texto{
-    max-width: 471px;
+    max-width: 500px;
     color: var(--descricao-padrao);
     font-size: var(--descricao-padrao-tamanho);
     font-family: var(--descricao-padrao-fonte);
@@ -38,8 +38,12 @@
 
 
 @media (max-width: 768px){
+    .mascote {
+        width: 95%;
+    }
+
     .mascote .container .logoDelta{
-        width: 238px;
+        width: 200px;
     }
 }
 
@@ -54,7 +58,7 @@
     
     .mascote .container .texto{
         text-align: center;
-        max-width: 179px;
+        max-width: 230px;
     }
 
     .mascote .container .logoDelta{
@@ -65,7 +69,6 @@
 .entendaMais{
     width: 95%;
     margin: 80px auto 0 auto;
-    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -83,9 +86,8 @@
 
 .entendaMais .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
-    gap: 90px;
 }
 
 .entendaMais .container .conteudo{
