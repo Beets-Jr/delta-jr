@@ -132,3 +132,162 @@
         text-align: center;
     }
 }
+
+/* Mascote e Entenda Mais */
+.mascote{
+    width: 80%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mascote .titulo{
+    color: var(--h2-claro);
+    font-size: var(--h2-tamanho);
+    font-family: var(--h2-fonte);
+}
+
+.mascote .titulo:nth-child(2){
+    color:var(--h2-escuro);
+    margin-bottom: 55px;
+}
+
+.mascote .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.mascote .container .texto{
+    max-width: 500px;
+    color: var(--descricao-padrao);
+    font-size: var(--descricao-padrao-tamanho);
+    font-family: var(--descricao-padrao-fonte);
+    line-height: 17px;
+}
+
+.mascote .container .logoDelta{
+    width: 285px;
+}
+
+
+@media (max-width: 768px){
+    .mascote {
+        width: 95%;
+    }
+
+    .mascote .container .logoDelta{
+        width: 200px;
+    }
+}
+
+@media (max-width:480px){
+    .mascote .titulo:nth-child(2){
+        margin-bottom: 5px;
+    }
+
+    .mascote .container{
+        flex-direction: column-reverse;
+    }
+    
+    .mascote .container .texto{
+        text-align: center;
+        max-width: 230px;
+    }
+
+    .mascote .container .logoDelta{
+        width:174px;
+    }
+}
+
+.entendaMais{
+    width: 95%;
+    margin: 80px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.entendaMais .titulo{
+    color:var(--h2-claro);
+    font-size: var(--h2-tamanho);
+    font-family: var(--h2-fonte);
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.entendaMais .container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.entendaMais .container .conteudo{
+    max-width: 400px;
+    padding: 30px;
+}
+
+.entendaMais .container .conteudo .titulo{
+    color:var(--h3);
+    font-size: var(--h3-tamanho);
+    font-family: var(--h3-fonte);
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    
+}
+
+.entendaMais .container .conteudo .texto{
+    color:var(--descricao-padrao);
+    font-size: var(--descricao-padrao-tamanho);
+    font-family: var(--descricao-padrao-fonte);
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 17px;
+}
+
+.entendaMais .container .conteudo:hover{
+    background-color: #D7EDF1;
+    border-radius: 30px;
+}
+
+.entendaMais .logoBJ{
+    margin-top: 50px;
+}
+
+
+/* tablet */
+@media (max-width:768px){
+    .entendaMais .container {
+        gap: 5px;
+    }
+
+    .entendaMais .container .conteudo{
+        padding: 20px;
+    }
+
+    .entendaMais .logoBJ{
+        width: 250px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:480px){
+    .entendaMais {
+        margin-top: 50px;
+    }
+    
+    .entendaMais .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .entendaMais .container .conteudo{
+        max-width: 300px;
+    }
+}
