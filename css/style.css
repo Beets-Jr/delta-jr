@@ -186,7 +186,7 @@
 .container-menor,
 .container-maior {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .container-menor div:nth-last-of-type(even),
