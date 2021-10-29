@@ -155,6 +155,11 @@
   /* align-self: flex-end; */
 }
 
+.redes a {
+  text-decoration: none;
+  color: var(--cor-footer);
+}
+
 .redes p {
   margin: 10px 0;
 }
