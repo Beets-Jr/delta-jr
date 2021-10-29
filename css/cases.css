@@ -113,6 +113,7 @@ body{
         margin-bottom: 15px;
         width: 30px;
     }
+}
 /* E-aulas */
 .e-aulas h2 {
    font-family: var(--h2-fonte);
