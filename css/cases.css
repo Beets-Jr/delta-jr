@@ -1,13 +1,26 @@
+body{
+    margin: 0px;
+}
 
 .matematrik-container{
     background: #D7EDF1;
+    padding-bottom: 20px;
+}
+
+#div-matematrik{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#matematrik-content{
+    width: 65%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-right: 200px;
-    padding-left: 200px;
+    align-items: center;
 }
+
 #img-matematrik{
     height: 200px;
     width: 232px;
@@ -22,27 +35,29 @@
     font-weight: bold;
     font-size: var(--h2-tamanho);
     margin-top: 50px;
+    text-align: center;
 }
 
 .paragrafo-matematrik{
     font-family: var(--descricao-cases-fonte);
     color: var(--descricao-cases);
     font-size: var(--descricao-cases-tamanho);
-    text-transform: uppercase;
+    text-align: center;
 }
 
 /*tablet*/
 @media screen and (max-width: 816px) {
     .matematrik-container{
         padding-bottom: 20px;
-        padding-right: 60px;
-        padding-left: 60px;
     }
+
+    #matematrik-content{
+        width: 70%;
+    }
+
     #img-matematrik{
         height: 180px;
         width: 202px;
-        margin-top: 40px;
-        margin-bottom: 30px;
     }
 }
 
@@ -50,9 +65,12 @@
 @media screen and (max-width: 480px){
     .matematrik-container{
         padding-bottom: 20px;
-        padding-right: 40px;
-        padding-left: 40px;
     }
+
+    #matematrik-content{
+        width: 75%;
+    }
+
     #img-matematrik{
         height: 99px;
         width: 110px;
@@ -63,7 +81,8 @@
     #matematrik-title{
         margin-top: 30px;
     }
-    
+}
+
 /* E-aulas */
 .e-aulas h2 {
    font-family: var(--h2-fonte);
