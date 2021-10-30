@@ -31,7 +31,7 @@
   --dev-beets-tamanho: 1.1rem;
   --dev-beets-fonte: Montserrat;
 
-  --descricao-padrao-tamanho: 1.4rem;
+  --descricao-padrao-tamanho: 2.4rem;
   --descricao-padrao-fonte: Montserrat;
 
   --descricao-cases-tamanho: 2.4rem;
@@ -90,6 +90,7 @@
     --descricao-cases-tamanho: 2rem;
 
     --subtitulo-banner-tamanho: 2rem;
+    --descricao-padrao-tamanho: 1.8rem;
     --paragrafo-home-tamanho: 1.8rem;
 
     --titulo-servicos-tamanho: 2.4rem;
@@ -113,7 +114,7 @@
     --enviar-tamanho: 1.8rem;
     --dev-beets-tamanho: 1.1rem;
 
-    --descricao-padrao-tamanho: 1rem;
+    --descricao-padrao-tamanho: 1.2rem;
     --descricao-cases-tamanho: 1rem;
     --descricao-contato-tamanho: 1.8rem;
 
