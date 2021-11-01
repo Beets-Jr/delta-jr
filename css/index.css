@@ -4,7 +4,13 @@
     max-width: 1024px;
     margin: 0 auto;
 }
-
+.case-elemento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
 .nossos-cases-container {
     display: flex; 
     gap: 20px;
@@ -16,12 +22,18 @@
 }
 
 .nossos-case-elemento {
-    width: 350px;      
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+       
 }
 
 .nossos-case-elemento img {
     width: 200px;
     height: auto;
+    align-self: center;
+    margin-top: 20px;
 }
 
 .nossos-case-elemento p {
@@ -29,7 +41,8 @@
    font-size: var(--h3-tamanho) ;
    color: var(--h3);
    font-weight: bold;
-   margin-bottom: 20px;
+   margin-bottom: auto;
+   margin-top: auto;
 }
 
 @media only screen and (max-width: 768px) {
