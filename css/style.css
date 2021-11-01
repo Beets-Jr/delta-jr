@@ -179,6 +179,8 @@
   border-color: var(--h2-escuro);
   background-color: var(--h2-escuro);
   border-radius: 10px;
+  font-family: var(--dev-beets-fonte);
+  font-size: var(--dev-beets-tamanho);
 }
 
 .info {
