@@ -164,6 +164,84 @@
   margin-top: 75px;
 }
 
+/* PRODUTOS-NOSSOS-CASES */
+.nossos-cases {
+  padding: 60px  0  60px  0 ;
+  text-align:center;
+  max-width:1024px ;
+  margin: 0 auto;
+}
+.case-elemento {
+  display :flex;
+flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:100% ;
+}
+.nossos-cases-container {
+  display : flex;
+  gap: 20px ;
+  flex-wrap : wrap;
+  justify-content:center;
+  margin-top:  30px ;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.nossos-case-elemento {
+flex :  1 ;
+display : flex;
+flex-direction:column;
+justify-content : space-around;
+     
+}
+
+.nossos-case-elemento  img {
+  width:  200px ;
+  height:auto;
+  align-self:center;
+  margin-top:20px ;
+}
+
+.nossos-case-elemento  p {
+ font-family:var(--h3-fonte);
+ font-size:var(--h3-tamanho);
+ color:var(--h3);
+ font-weight:bold;
+ margin-bottom : auto;
+ margin-top:auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .nossos-cases-container{
+     gap:10px ;
+  }
+
+  .nossos-case-elemento {
+      width:  35% ;
+      margin-bottom:  20px ;
+  }
+
+  .nossos-case-elemento  img {
+    width:  150px ;
+ }
+}
+
+@media only screen and (max-width:480px) {
+  .nossos-case-elemento {
+    flex-basis:100%;
+  }
+
+  .nossos-cases-container {
+      gap:  20px ;
+  }
+
+  .nossos-case-elemento  p {
+      margin-left:  10% ;
+      margin-right: 10% ;
+  }
+}
+
 .container-produtos div:not(:nth-child(02)){
   margin-top: 30px;
 }
