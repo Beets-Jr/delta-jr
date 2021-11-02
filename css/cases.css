@@ -1,0 +1,366 @@
+body {
+    margin: 0px;
+}
+
+/* E-aulas */
+.e-aulas h2 {
+   font-family: var(--h2-fonte);
+   color: var(--h2-escuro);
+   font-size: var(--h2-tamanho);
+   text-align: center;
+   margin: 0 0 40px 0;
+}
+
+.e-aulas-img {
+   display: flex;
+   justify-content: center;
+}
+
+.e-aulas img {
+   max-width: 300px;
+   align-self: center;
+}
+
+.e-aulas-paragrafo {
+   max-width: 780px;
+   margin: 0 auto;
+}
+
+.e-aulas-paragrafo p {
+   font-family: var(--descricao-cases-fonte);
+   font-size: var(--descricao-cases-tamanho);
+   color: var(--descricao-cases);
+   margin: 70px 10px 0 10px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.e-aulas-botao {
+  max-width: 780px;
+  margin: 40px auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media screen and (max-width: 768px) {
+   .e-aulas h2 {
+      font-size: var(--h2-tamanho);
+   }
+
+   .e-aulas-paragrafo p {
+      font-size: var(--descricao-cases-tamanho);
+      padding: 0 40px 0 40px;
+      margin: 50px 10px 0 10px;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .e-aulas h2 {
+      font-size: var(--h2-tamanho);
+      margin: 0 0 10px 0;
+   }
+
+   .e-aulas img {
+      max-width: 150px;
+   }
+
+   .e-aulas-paragrafo p {
+      font-size: var(--descricao-cases-tamanho);
+      padding: 0 10px 0 10px;
+      margin: 20px 10px 0 10px;
+   }
+}
+
+/* Editoração de Questões */
+.editoracao-container{
+    background: #D7EDF1;  
+    padding-bottom: 20px;
+}
+
+#div-editoracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#div-content{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-editoracao{
+    height: 181.00112915039062px;
+    width: 236px;
+    align-self: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+#editoracao-title{
+    font-family: var(--h2-fonte);
+    color: var(--h2-escuro);
+    font-weight: bold;
+    font-size: var(--h2-tamanho);
+    margin-top: 50px;
+    align-self: center;
+}
+
+.paragrafo-editoracao{
+    font-family: var(--descricao-cases-fonte);
+    color: var(--descricao-cases);
+    font-size: var(--descricao-cases-tamanho);
+    text-align: center;
+}
+
+.linha-cases{
+    height: 0px;
+    width: 100px;
+    left: 466px;
+    top: 1706px;
+    border-radius: 5px;    
+    align-self: center;
+    background-color: #161571;
+    border: 2px solid #161571;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*tablet*/
+@media screen and (max-width: 816px){
+    .editoracao-container{
+        padding-bottom: 20px;
+    }
+
+    #div-content{
+        width: 70%;
+    }
+
+    #img-editoracao{
+        height: 166px;
+        width: 128px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    
+    #editoracao-title{
+        margin-top: 
+        40px;
+    }
+    
+    .linha-cases{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 70px;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 480px){
+    .editoracao-container{
+        padding-bottom: 20px;
+    }
+
+    #div-content{
+        width: 75%;
+    }
+
+    #img-editoracao{
+        height: 65px;
+        width: 80px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    #editoracao-title{
+        margin-top: 30px;
+    }
+    
+    .linha-cases{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 30px;
+    }
+}
+
+/*Acessoria - Omu*/
+.acessoria-omu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.acessoria-omu .titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.acessoria-omu h2 {
+  color: var(--h2-escuro);
+  font-size: var(--h2-tamanho);
+  font-weight: bold;
+  font-family: var(--h2-fonte);
+  text-align: center;
+  max-width: 780px;
+}
+
+.img-omu {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.img-omu img {
+  align-self: center;
+  max-width: 324px;
+}
+
+.acessoria-omu .paragrafo {
+  align-self: center;
+  max-width: 780px;
+}
+
+.acessoria-omu .paragrafo p {
+  font-family: var(--descricao-cases-fonte);
+  font-size: var(--descricao-cases-tamanho);
+  color: var(--descricao-cases);
+  margin: 70px 10px 0 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Responsividade tablet*/
+
+@media screen and (max-width: 768px) {
+  .acessoria-omu .paragrafo p {
+    font-size: var(--descricao-cases-tamanho);
+  }
+
+  .acessoria-omu .titulo {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .acessoria-omu .paragrafo {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/*Responsividade celular*/
+@media screen and (max-width: 480px) {
+  .acessoria-omu {
+    margin-top: 20px;
+  }
+
+  .acessoria-omu .paragrafo p {
+    font-size: var(--descricao-cases-tamanho);
+  }
+
+  .acessoria-omu .titulo {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .acessoria-omu .paragrafo {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .acessoria-omu .paragrafo p {
+    margin-top: 20px;
+  }
+
+  .img-omu {
+    margin-top: 0;
+  }
+
+  .img-omu img {
+    width: 150px;
+  }
+}
+
+/* Matematrik */
+.matematrik-container{
+    background: #D7EDF1;
+    padding-bottom: 20px;
+}
+
+#div-matematrik{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#matematrik-content{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-matematrik{
+    height: 200px;
+    width: 232px;
+    align-self: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+#matematrik-title{
+    font-family: var(--h2-fonte);
+    color: var(--h2-escuro);
+    font-weight: bold;
+    font-size: var(--h2-tamanho);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.paragrafo-matematrik{
+    font-family: var(--descricao-cases-fonte);
+    color: var(--descricao-cases);
+    font-size: var(--descricao-cases-tamanho);
+    text-align: center;
+}
+
+/*tablet*/
+@media screen and (max-width: 816px) {
+    .matematrik-container{
+        padding-bottom: 20px;
+    }
+
+    #matematrik-content{
+        width: 70%;
+    }
+
+    #img-matematrik{
+        height: 180px;
+        width: 202px;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 480px){
+    .matematrik-container{
+        padding-bottom: 20px;
+    }
+
+    #matematrik-content{
+        width: 75%;
+    }
+
+    #img-matematrik{
+        height: 99px;
+        width: 110px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    #matematrik-title{
+        margin-top: 30px;
+    }
+}

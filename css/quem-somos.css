@@ -1,3 +1,54 @@
+/* BANNER DESCRIÇÃO */
+
+.qs-banner h1 {
+    font-family: var(--h1-fonte);
+    font-size: var(--h1-tamanho);
+    color: var(--h1-padrao);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+  }
+  
+  .qs-banner p {
+    font-family: var(--descricao-padrao-fonte);
+    font-size: var(--descricao-padrao-tamanho);
+    color: var(--descricao-padrao);
+    text-align: center;
+   
+  }
+  
+  .main-banner {
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to bottom, #d7edf1, #ffffff);
+    background-size: cover;
+    padding-top: 30px;
+    
+  }
+  
+  @media only screen and (min-width: 788px) and (max-width: 979px) {
+    .container {
+      padding: 0 10%;
+    }
+  }
+  @media screen and (max-width: 787px) {
+    .container {
+      padding: 0 10%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 0 10%;
+    }
+  }
+
+
 /* MVV */
 #mvv-section {
     margin: 0 2%;
