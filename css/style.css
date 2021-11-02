@@ -35,7 +35,7 @@
   --descricao-padrao-fonte: Montserrat;
 
   --descricao-cases-tamanho: 2.4rem;
-  --descricao-cases-fonte: Montserrat;
+  --descricao-cases-fonte: Cinzel;
 
   --descricao-contato-tamanho: 2.4rem;
   --descricao-contato-fonte: Montserrat;
@@ -74,6 +74,8 @@
   --descricao-rede-delta-home: #cfab00;
   --descricao-cases: #161571;
   --aluno-ou-professor: #161571;
+  --linha-titulo-secao-home: #fcd108;
+  --fundo-azul-home: #D7EDF1;
 }
 
 /*tablet*/
