@@ -1,8 +1,10 @@
+/* Banner e Descrição */
 .container {
   margin: 0 auto;
   padding: 0px;
   position: relative;
 }
+
 .intro {
   width: 100%;
   height: 300px;
@@ -10,16 +12,17 @@
   background-size: cover;
   padding-top: 30px;
 }
+
 .intro h1 {
   font-family: var(--h1-fonte);
   font-size: var(--h1-tamanho);
-  text-transform: uppercase;
   text-align: center;
   margin-top: 100px;
   color: var(--h1-padrao);
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
+
 .descricao-servicos {
   text-align: center;
   font-family: var(--descricao-padrao-fonte);
@@ -27,20 +30,138 @@
   color: var(--descricao-padrao);
 }
 
-@media only screen and (min-width: 788px) and (max-width: 979px) {
+/* Serviços */
+.container-servicos{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 1250px;
+}
+
+.container-servicos div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+}
+
+.container-servicos div:not(:nth-child(02)){
+  margin-top: 30px;
+}
+
+.container-servicos div.logo-servicos{
+  font-family: var(--h2-fonte);
+  font-size: var(--h2-tamanho);
+  color: var(--h2-claro);
+  height: unset;
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container-servicos .logo-servicos h2{
+  margin-top: 50px;
+}
+
+.container-desc-servicos::after{
+  content: "";
+  display: block;
+  background-color: #29AAE3;
+  height: 2px;
+  width: 65%;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 15px;
+  max-width: 935px;
+}
+
+.container-desc-servicos:hover{
+  background-color: #D7EDF1;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.container-servicos div h3{
+  font-family: var(--h3-fonte);
+  font-size: var(--h3-tamanho);
+  font-weight: bold;
+  color: var(--h3);
+  padding-left: 15px;
+}
+
+.container-servicos div p{
+  font-family: var(--descricao-padrao-fonte);
+  font-size: var(--descricao-padrao-tamanho);
+  color: var(--descricao-padrao);
+  padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
   .container {
     padding: 0 10%;
   }
+
+  .container-servicos div{
+    height: 120px;
+  }
+
+  .container-desc-servicos::after{
+    margin-top: 115px;
+  }
 }
+
 @media screen and (max-width: 787px) {
   .container {
     padding: 0 10%;
   }
+
+  .container-servicos div{
+    height: 110px;
+  }
+
+  .container-desc-servicos::after{
+    margin-top: 100px;
+  }
 }
+
 @media screen and (max-width: 480px) {
   .container {
     padding: 0 10%;
   }
+  .container-servicos .logo-servicos img{
+    width: 115px;
+  }
+}
+
+/* Produtos */
+.container-produtos{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 1250px;
+}
+
+.container-produtos div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+}
+
+.container-chamada-servicos{
+  font-family: var(--h4-fonte);
+  font-size: var(--h4-tamanho);
+  color: var(--h4-chamada-servicos);
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 75px;
 }
 
 /* PRODUTOS-NOSSOS-CASES */
@@ -121,3 +242,94 @@ justify-content : space-around;
   }
 }
 
+.container-produtos div:not(:nth-child(02)){
+  margin-top: 30px;
+}
+
+.container-produtos div.logo-produtos{
+  font-family: var(--h2-fonte);
+  font-size: var(--h2-tamanho);
+  color: var(--h2-claro);
+  height: unset;
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container-produtos .logo-produtos h2{
+  margin-top: 50px;
+}
+
+.container-desc-produtos::after{
+  content: "";
+  display: block;
+  background-color: #29AAE3;
+  height: 2px;
+  width: 65%;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 15px;
+  max-width: 935px;
+}
+
+.container-desc-produtos:hover{
+  background-color: #D7EDF1;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.container-produtos div h3{
+  font-family: var(--h3-fonte);
+  font-size: var(--h3-tamanho);
+  font-weight: bold;
+  color: var(--h3);
+  padding-left: 15px;
+}
+
+.container-produtos div p{
+  font-family: var(--descricao-padrao-fonte);
+  font-size: var(--descricao-padrao-tamanho);
+  color: var(--descricao-padrao);
+  padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .container {
+    padding: 0 10%;
+  }
+
+  .container-produtos div{
+    height: 120px;
+  }
+
+  .container-desc-produtos::after{
+    margin-top: 115px;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .container {
+    padding: 0 10%;
+  }
+
+  .container-produtos div{
+    height: 115px;
+  }
+
+  .container-desc-produtos::after{
+    margin-top: 115px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10%;
+  }
+  .container-produtos .logo-produtos img{
+    width: 115px;
+  }
+
+  .container-chamada-servicos{
+    margin-top: 30px;
+  }
+}
