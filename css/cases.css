@@ -8,7 +8,6 @@ body {
   font-family: var(--h1-fonte);
   font-size: var(--h1-tamanho);
   color: var(--h1-padrao);
-  text-transform: uppercase;
   text-align: center;
   margin-top: 100px;
   margin-left: 50px;
@@ -244,6 +243,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .acessoria-omu .titulo {
