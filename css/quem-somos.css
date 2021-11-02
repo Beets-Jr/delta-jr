@@ -9,7 +9,7 @@
     margin-top: 100px;
     margin-left: 50px;
     margin-right: 50px;
-    
+    margin-bottom: 30px;
   }
   
   .qs-banner p {
@@ -17,7 +17,9 @@
     font-size: var(--descricao-padrao-tamanho);
     color: var(--descricao-padrao);
     text-align: center;
-   
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
   
   .main-banner {
@@ -25,11 +27,9 @@
     padding: 0px;
     position: relative;
     width: 100%;
-    height: 300px;
     background-image: linear-gradient(to bottom, #d7edf1, #ffffff);
     background-size: cover;
     padding-top: 30px;
-    
   }
   
   @media only screen and (min-width: 788px) and (max-width: 979px) {
@@ -40,6 +40,10 @@
   @media screen and (max-width: 787px) {
     .container {
       padding: 0 10%;
+    }
+    .qs-banner p{
+        width: 80%;
+        margin-bottom: 0px;
     }
   }
   @media screen and (max-width: 480px) {
