@@ -221,7 +221,6 @@
 .titulo-img-parceria-unicamp{
     width: 35%;
     height: auto;
-    text-transform: uppercase;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -233,7 +232,6 @@
     color: var(--paragrafo-home);
     font-size: var(--paragrafo-home-tamanho);
     font-family: var(--paragrafo-home-fonte);
-    text-transform: uppercase;
     text-align: center;
     padding: 1.5rem;
 }
