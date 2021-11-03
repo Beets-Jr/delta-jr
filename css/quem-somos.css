@@ -4,7 +4,6 @@
     font-family: var(--h1-fonte);
     font-size: var(--h1-tamanho);
     color: var(--h1-padrao);
-    text-transform: uppercase;
     text-align: center;
     margin-top: 100px;
     margin-left: 50px;
@@ -99,7 +98,6 @@
     color: var(--h2-claro);
     font-family: var(--h2-fonte);
     font-size: var(--h2-tamanho);
-    text-transform: uppercase;
 }
 
 .mvv-item p {
