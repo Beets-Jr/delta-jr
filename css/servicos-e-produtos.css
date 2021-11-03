@@ -164,6 +164,11 @@
   margin-top: 75px;
 }
 
+.container-chamada-servicos a:hover{
+  color: #161571;
+  transition: 1s;
+}
+
 /* PRODUTOS-NOSSOS-CASES */
 .nossos-cases {
   padding: 60px  0  60px  0 ;
