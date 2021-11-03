@@ -76,8 +76,15 @@
 }
 
 .alunos-prof-item-desc {
-    height: 220px;
+    height: 130px;
     margin: 40px 85px 0 85px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .alunos-prof-item-desc {
+    height: 130px;
+    margin: 40px 10% 0 10%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
