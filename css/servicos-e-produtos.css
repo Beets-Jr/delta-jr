@@ -171,6 +171,13 @@
   max-width:1024px ;
   margin: 0 auto;
 }
+
+.nossos-cases h2 {
+  font-size: var(--h2-tamanho);
+  font-family: var(--h2-fonte);
+  color: var(--h2-claro);
+}
+
 .case-elemento {
   display :flex;
 flex-direction:row;
