@@ -69,6 +69,7 @@
   --cor-fundo-header: #D7EDF1;
   --cor-fundo-header-hover: #ffffff;
   --cor-header-hover: #161571;
+  --cor-subheader-hover: #ffffff;
   --forms: #000000;
   --enviar: #ffffff;
 
@@ -158,7 +159,7 @@ nav {
 
 .menu-item {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .menu-item:hover {
@@ -176,6 +177,8 @@ nav {
 
 .menu-item > a, .menu-item > span {
   padding: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-menu {
@@ -183,8 +186,14 @@ nav {
 }
 
 .submenu {
+  display: none;
   position: absolute;
   top: calc(70px + 4rem);
+  background-color: var(--cor-fundo-header-hover);
+}
+
+.dropdown-menu:hover .submenu {
+  display: inline-block;
 }
 
 .submenu a, .submenu a:visited {
@@ -199,4 +208,12 @@ nav {
 .submenu-item {
   display: flex;
   justify-content: center;
+}
+
+.submenu-item:hover {
+  background-color: var(--cor-header-hover);
+}
+
+.submenu-item:hover > a, .submenu-item:hover > a:visited {
+  color: var(--cor-fundo-header-hover);
 }
