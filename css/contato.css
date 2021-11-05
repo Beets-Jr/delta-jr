@@ -30,6 +30,11 @@
   color: #393939;
 }
 
+.botao-forms :hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
 .botao-forms {
   display: flex;
   justify-content: right;
