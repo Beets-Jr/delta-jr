@@ -22,6 +22,9 @@
   --sub-header-tamanho: 1.4rem;
   --sub-header-fonte: Cinzel; /*utilize com font-weight: bold*/
 
+  --menu-mobile-tamanho: 1.8rem;
+  --menu-mobile-fonte: Montserrat;
+
   --footer-tamanho: 1.2rem;
   --footer-fonte: Montserrat;
 
@@ -70,6 +73,9 @@
   --cor-fundo-header-hover: #ffffff;
   --cor-header-hover: #161571;
   --cor-subheader-hover: #ffffff;
+  --cor-fundo-menu-mobile: #ffffff;
+  --cor-fundo-menu-mobile-ativo: #D7EDF1;
+  --cor-fundo-menu-mobile-contato: #0D4068;
   --forms: #000000;
   --enviar: #ffffff;
 
@@ -100,6 +106,9 @@
 
     --titulo-servicos-tamanho: 2.4rem;
     --aluno-ou-professor-tamanho: 1.6rem;
+
+    --cor-header: #161571;
+    --cor-header-hover: ;
   }
 }
 
@@ -114,6 +123,7 @@
     --botoes-tamanho: 1.4rem;
 
     --header-tamanho: 1.8rem;
+    --menu-mobile-tamanho: 1.2rem;
     --footer-tamanho: 1.2rem;
     --forms-tamanho: 1.2rem;
     --enviar-tamanho: 1.8rem;
@@ -216,4 +226,64 @@ nav {
 
 .submenu-item:hover > a, .submenu-item:hover > a:visited {
   color: var(--cor-fundo-header-hover);
+}
+
+/* MENU MOBILE */
+.btn-mobile, .menu-mobile {
+  display: none;
+}
+
+.btn-mobile {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.menu-mobile {
+  position: absolute;
+  left: 0;
+  top: calc(70px + 4rem);
+  width: 100vw;
+  height: calc(100vh - (70px + 4rem));
+  background-color: var(--cor-fundo-menu-mobile);
+}
+
+.menu-mobile-item {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#mobile-item-ativo {
+  background-color: var(--cor-fundo-menu-mobile-ativo);
+}
+
+#mobile-item-ativo a, #mobile-item-ativo a:visited {
+  font-weight: bold;
+}
+
+.menu-mobile-item.menu-contato {
+  background-color: var(--cor-fundo-menu-mobile-contato);
+}
+
+.menu-mobile-item.menu-contato a, .menu-mobile-item.menu-contato a:visited {
+  color: var();
+}
+
+.menu-mobile a, .menu-mobile a:visited {
+  display: block;
+  font: var(--menu-mobile-tamanho) var(--menu-mobile-fonte), sans-serif;
+  color: var(--cor-header);
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }  
+
+  .btn-mobile, .menu-mobile {
+    display: block;
+  }
 }
