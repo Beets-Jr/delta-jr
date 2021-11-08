@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/rede-delta.css">
@@ -10,17 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Delta Jr.</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<title>Delta Jr.</title>
 </head>
 <body>
     <section class="intro">
 		<h1>Rede Delta</h1>
 	</section>
-
 	<div class="descricao-servicos container">
 		<p>Este projeto tem como objetivo criar uma comunidade de professores da Unicamp e alunos que buscam aulas particulares de matemática, por meio do site da Delta.</p>
 	</div>
-    
     <section class="rede-delta-alunos-prof">
         <div class="alunos-prof-item">
             <img src="img/professor.svg" alt="Ícone de um capelo, representando a associação de professores à Delta Júnior"></img>
@@ -30,13 +29,69 @@
             
             <button class="btn-padrao borda" type="button" onclick="window.location.href='contato.html'" style="cursor: pointer;">Clique aqui</button>
         </div>
-
         <div class="alunos-prof-item">
             <img src="img/aluno.svg" alt="Ícone de um lápis, representando a inscrição como aluno dos professores da Delta Júnior"></img>
             <div class="alunos-prof-item-desc">
                 <p>Se você é um aluno em busca de um professor de matemática, veja o painel abaixo com nossos professores associados e escolha o que mais se encaixa com seu perfil</p>
             </div>
             <button class="btn-padrao borda" type="button" rel="nofollow" onclick="window.location.href='https://forms.gle/k9dH4QHMWB6vvSP37'" style="cursor: pointer;">Clique aqui</button>
+        </div>
+    </section>
+    <section class="nossos-professores">
+        <h2>Nossos Professores</h2>
+        <div class="infos-nossos-professores">
+            <img class="img-nossos-professores" src="img/circulo-300.png" alt="Circulo">
+            <div>
+                <ul>
+                    <li>Nome</li>
+                    <li>Semestre que está no curso</li>
+                    <li>Dias da semana disponíveis e horários</li>
+                    <li>Dá aula para:</li>
+                    <li>Faixa de preço:</li>
+                    <li>Descrição/Bio:</li>
+                    <li>Comentários:</li>
+                </ul>
+                <div class="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                    <label for="cm_star-1"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                </div>
+            </div>
+        </div>
+        <div class="infos-nossos-professores">
+            <img class="img-nossos-professores" src="img/circulo-300.png" alt="Circulo">
+            <div>
+                <ul>
+                    <li>Nome</li>
+                    <li>Semestre que está no curso</li>
+                    <li>Dias da semana disponíveis e horários</li>
+                    <li>Dá aula para:</li>
+                    <li>Faixa de preço:</li>
+                    <li>Descrição/Bio:</li>
+                    <li>Comentários:</li>
+                </ul>
+                <div class="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                    <label for="cm_star-1"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                </div>
+            </div>
         </div>
     </section>
 </body>
