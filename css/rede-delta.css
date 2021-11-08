@@ -112,7 +112,18 @@
    font-size: var(--h2-tamanho);
    font-family: var(--h2-fonte);
    text-align: center;
-   margin: 100px 0;
+   margin: 100px 0 50px 0;
+}
+
+.barra-busca {
+   display: flex;
+   justify-content: center;
+}
+
+.barra-busca input {
+   padding: 8px;
+   border-radius: 10px;
+   border-color: gray;
 }
 
 .nossos-professores ul li {
