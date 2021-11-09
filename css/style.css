@@ -167,6 +167,10 @@ nav {
   text-transform: uppercase;
 }
 
+#menu-item-ativo > a, #menu-item-ativo > a:visited, #menu-item-ativo > span {
+  color: var(--cor-header-hover);
+}
+
 .menu-item {
   display: flex;
   align-items: stretch;
