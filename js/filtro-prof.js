@@ -13,8 +13,7 @@ function filterFunction() {
     input = document.querySelector(".searchInput");
     filter = input.value.toUpperCase();
     ul = document.querySelector(".animalUL");
-    ul2 = ul.querySelector(".single-animal");
-    li = ul2.getElementsByTagName("li");
+    li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
        a = li[i].getElementsByTagName("span")[0];
        value = a.textContent || a.innerText;
