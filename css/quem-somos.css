@@ -188,8 +188,7 @@
 
 /* Mascote e Entenda Mais */
 .mascote{
-    width: 80%;
-    margin: 50px auto 0 auto;
+    margin: 50px 30px 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,7 +208,7 @@
 .mascote .container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -219,20 +218,27 @@
     font-size: var(--descricao-padrao-tamanho);
     font-family: var(--descricao-padrao-fonte);
     line-height: 17px;
+    margin-left: 100px;
 }
 
 .mascote .container .logoDelta{
     width: 285px;
+    margin-right: 100px;
 }
 
 
 @media (max-width: 768px){
     .mascote {
-        width: 95%;
+        margin: 0;
+    }
+
+    .mascote .container .texto{
+        margin-left: 5px;
     }
 
     .mascote .container .logoDelta{
         width: 200px;
+        margin-right: 0;
     }
 }
 
@@ -248,10 +254,12 @@
     .mascote .container .texto{
         text-align: center;
         max-width: 230px;
+        margin: 0;
     }
 
     .mascote .container .logoDelta{
         width:174px;
+        margin: 0;
     }
 }
 
