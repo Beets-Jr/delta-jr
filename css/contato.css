@@ -28,6 +28,7 @@
   border-radius: 10px;
   border: 2px solid #e5e5e5;
   color: #393939;
+  padding-left: 10px;
 }
 
 .botao-forms :hover {
