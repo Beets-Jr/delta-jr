@@ -126,6 +126,10 @@
    border-color: gray;
 }
 
+.barra-busca input:focus-visible{
+   outline: none;
+}
+
 .nossos-professores ul li {
    color: var(--aluno-ou-professor);
    font-size: var(--aluno-ou-professor-tamanho);
@@ -217,4 +221,8 @@
    .estrelas label i.fa::before {
       font-size: 15px;
    }
+}
+
+.hide {
+   display: none;
 }
