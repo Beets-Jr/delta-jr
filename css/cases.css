@@ -3,7 +3,6 @@ body {
 }
 
 /* banner */
-
 .cases-banner h1 {
   font-family: var(--h1-fonte);
   font-size: var(--h1-tamanho);
@@ -338,7 +337,7 @@ body {
 /* Matematrik */
 .matematrik-container{
     background: #D7EDF1;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 #div-matematrik{
