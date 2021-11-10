@@ -27,7 +27,6 @@ body {
 .main-banner {
   margin: 0 auto;
   padding: 0px;
-  position: relative;
   width: 100%;
   background-image: linear-gradient(to bottom, #d7edf1, #ffffff);
   background-size: cover;
