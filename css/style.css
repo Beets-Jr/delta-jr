@@ -178,10 +178,12 @@ nav {
 
 .menu-item:hover {
   background-color: var(--cor-fundo-header-hover);
+  transition: .5s;
 }
 
 .menu .menu-item:hover > * {
   color: var(--cor-header-hover);
+  transition: .5s;
 }
 
 .menu-item > a, .menu-item > a:visited {
@@ -226,6 +228,7 @@ nav {
 
 .submenu-item:hover {
   background-color: var(--cor-header-hover);
+  transition: .5s;
 }
 
 .submenu-item:hover > a, .submenu-item:hover > a:visited {
