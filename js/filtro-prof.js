@@ -42,6 +42,7 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
+// Função que define o slider de valor da aula para seu valor máximo quando a página é recarregada
 window.onload = function() {
   document.getElementById('myRange').value = '300';
   output.innerHTML = document.getElementById('myRange').value;
