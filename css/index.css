@@ -139,7 +139,7 @@
 }
 
 .item {
-  background-color: var(--cor-header);
+  background-color: #84b5be;
   border-radius: 50%;
   height: 145px;
   width: 145px;
@@ -240,7 +240,7 @@
     width: 470px;
     margin-top:15px;
     border: 3px solid; 
-    border-color: var(--cor-header);
+    border-color: #84b5be;
     border-radius: 10px;
 }
 

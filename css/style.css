@@ -322,7 +322,7 @@ nav {
   font: var(--botoes-fonte);
   font-size: var(--botoes-tamanho);
   text-transform: uppercase;
-  color: var(--cor-header);
+  color: #84b5be;
   font-weight: bold;
   background-color: var(--enviar);
   padding: 15px 20px;
@@ -341,7 +341,7 @@ nav {
 .borda::before {
   content: "";
   position: absolute;
-  background-color: var(--cor-header);
+  background-color: #84b5be;
   width: 50%;
   height: 4px;
   top: 0;
@@ -352,7 +352,7 @@ nav {
 .borda::after {
   content: "";
   position: absolute;
-  background-color: var(--cor-header);
+  background-color: #84b5be;
   width: 50%;
   height: 4px;
   bottom: 0;
