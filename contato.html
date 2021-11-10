@@ -8,14 +8,43 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contato.css">
 
+  <script type="text/javascript" src="js/menu.js" defer></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
   <title>Delta Jr.</title>
 </head>
-
 <body>
+  <header class="cabecalho">
+    <img src="./img/logo.png" alt="Logo da Delta Júnior" class="logo">
+    <nav id="nav">
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="quem-somos.html">Quem Somos</a></li>
+        <li class="menu-item dropdown-menu">
+          <span>Projetos</span>
+          <ul class="submenu">
+            <li class="submenu-item"><a href="servicos-e-produtos.html">Serviços e Produtos</a></li>
+            <li class="submenu-item"><a href="rede-delta.html">Rede Delta</a></li>
+            <li class="submenu-item"><a href="cases.html">Cases</a></li>
+          </ul>
+        </li>
+        <li id="menu-item-ativo" class="menu-item"><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <button id="btn-mobile"><img src="./img/icon-menu.svg" alt="Ícone de menu"></button>
+      <ul class="menu-mobile">
+        <li class="menu-mobile-item"><a href="index.html">Home</a></li>
+        <li class="menu-mobile-item"><a href="quem-somos.html">Quem Somos</a></li>
+        <li class="menu-mobile-item"><a href="servicos-e-produtos.html">Serviços e Produtos</a></li>
+        <li class="menu-mobile-item"><a href="rede-delta.html">Rede Delta</a></li>
+        <li class="menu-mobile-item"><a href="cases.html">Cases</a></li>
+        <li class="menu-mobile-item menu-contato"><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
 
   <footer class="footer">
     <div class="logo">
@@ -44,6 +73,6 @@
       </div>
     </div>
   </footer>
-</body>
 
+</body>
 </html>
