@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/quem-somos.css">
 
+  <script type="text/javascript" src="js/menu.js" defer></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,11 +18,38 @@
 </head>
 
 <body>
+  <header class="cabecalho">
+    <img src="./img/logo.png" alt="Logo da Delta Júnior" class="logo">
+    <nav id="nav">
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li id="menu-item-ativo" class="menu-item"><a href="quem-somos.html">Quem Somos</a></li>
+        <li class="menu-item dropdown-menu">
+          <span>Projetos</span>
+          <ul class="submenu">
+            <li class="submenu-item"><a href="servicos-e-produtos.html">Serviços e Produtos</a></li>
+            <li class="submenu-item"><a href="rede-delta.html">Rede Delta</a></li>
+            <li class="submenu-item"><a href="cases.html">Cases</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <button id="btn-mobile"><img src="./img/icon-menu.svg" alt="Ícone de menu"></button>
+      <ul class="menu-mobile">
+        <li class="menu-mobile-item"><a href="index.html">Home</a></li>
+        <li id="mobile-item-ativo" class="menu-mobile-item"><a href="quem-somos.html">Quem Somos</a></li>
+        <li class="menu-mobile-item"><a href="servicos-e-produtos.html">Serviços e Produtos</a></li>
+        <li class="menu-mobile-item"><a href="rede-delta.html">Rede Delta</a></li>
+        <li class="menu-mobile-item"><a href="cases.html">Cases</a></li>
+        <li class="menu-mobile-item menu-contato"><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
   <section class="qs-banner">
     <div class="main-banner">
       <h1>Quem Somos</h1>
     </div>
-
     <p>
       Fundada em 2018, a Delta Jr é a primeira empresa júnior de Licenciatura em Matemática do Brasil, e surgiu do desejo de alguns alunos do curso de Licenciatura em Matemática da Unicamp de adquirir mais conhecimento prático da carreira escolhida durante a graduação e de explorar outras possibilidades de atuação de um licenciado no mercado além da docência. Assim, acreditando que podemos nos formar como professores melhores e, principalmente, ter uma visão mais ampla em relação às opções de carreira que um licenciado em matemática possui, a Delta Jr visa proporcionar as mais diversas experiências com educação matemática aos seus membros e, através disso, impactar o ecossistema em que vivem.</p>
   </section>
