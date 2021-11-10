@@ -1,0 +1,346 @@
+/* BANNER DESCRIÇÃO */
+
+.qs-banner h1 {
+    font-family: var(--h1-fonte);
+    font-size: var(--h1-tamanho);
+    color: var(--h1-padrao);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .qs-banner p {
+    font-family: var(--descricao-padrao-fonte);
+    font-size: var(--descricao-padrao-tamanho);
+    color: var(--descricao-padrao);
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  .main-banner {
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #d7edf1, #ffffff);
+    background-size: cover;
+    padding-top: 30px;
+  }
+  
+  @media only screen and (min-width: 788px) and (max-width: 979px) {
+    .container {
+      padding: 0 10%;
+    }
+  }
+  @media screen and (max-width: 787px) {
+    .container {
+      padding: 0 10%;
+    }
+    .qs-banner p{
+        width: 80%;
+        margin-bottom: 0px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 0 10%;
+    }
+  }
+
+
+/* MVV */
+#mvv-section {
+    margin: 0 2%;
+    padding: 50px 0;
+}
+
+#mvv-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    gap: 30px;
+}
+
+#mvv-block img {
+    width: 160px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#mvv-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mvv-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 50px;
+    align-content: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.mvv-item:hover {
+    background-color: #D7EDF1;
+    border-radius: 30px;
+}
+
+.mvv-item h2 {
+    color: var(--h2-claro);
+    font-family: var(--h2-fonte);
+    font-size: var(--h2-tamanho);
+}
+
+.mvv-item p {
+    color: var(--descricao-padrao);
+    font-family: var(--descricao-padrao-fonte);
+    font-size: var(--descricao-padrao-tamanho);
+}
+
+.mvv-item-titulo {
+    width: 20%;
+    text-align: center;
+}
+
+.mvv-item-desc {
+    width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    #mvv-section {
+        margin: 0;
+    }
+
+    #mvv-block {
+        gap: 0;
+        margin: 0 5px;
+    }
+
+    #mvv-block img {
+        width: 110px;
+    }
+
+    #mvv-container {
+        gap: 10px;
+    }
+
+    .mvv-item {
+        height: 110px;
+        justify-content: flex-start;
+        gap: 72px;
+        padding: 0;
+    }
+
+    #mascote {
+        align-self: flex-start;
+    }
+
+    .mvv-item-desc {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #mvv-block {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 50px;
+    }
+
+    #mascote {
+        align-self: center;
+        flex-basis: 100%;
+    } 
+
+    #mvv-block img {
+        width: 35%;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+
+    #mvv-container {
+        gap: 20px;
+    }
+
+    .mvv-item {
+        justify-content: center;
+        flex-basis: 100%;
+        gap: 10px;
+    }
+
+    .mvv-item-titulo {
+        width: 100%;
+    }
+
+    .mvv-item-desc {
+        text-align: center;
+    }
+}
+
+/* Mascote e Entenda Mais */
+.mascote{
+    width: 80%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mascote .titulo{
+    color: var(--h2-claro);
+    font-size: var(--h2-tamanho);
+    font-family: var(--h2-fonte);
+}
+
+.mascote .titulo:nth-child(2){
+    color:var(--h2-escuro);
+    margin-bottom: 55px;
+}
+
+.mascote .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.mascote .container .texto{
+    max-width: 500px;
+    color: var(--descricao-padrao);
+    font-size: var(--descricao-padrao-tamanho);
+    font-family: var(--descricao-padrao-fonte);
+    line-height: 17px;
+}
+
+.mascote .container .logoDelta{
+    width: 285px;
+}
+
+
+@media (max-width: 768px){
+    .mascote {
+        width: 95%;
+    }
+
+    .mascote .container .logoDelta{
+        width: 200px;
+    }
+}
+
+@media (max-width:480px){
+    .mascote .titulo:nth-child(2){
+        margin-bottom: 5px;
+    }
+
+    .mascote .container{
+        flex-direction: column-reverse;
+    }
+    
+    .mascote .container .texto{
+        text-align: center;
+        max-width: 230px;
+    }
+
+    .mascote .container .logoDelta{
+        width:174px;
+    }
+}
+
+.entendaMais{
+    width: 95%;
+    margin: 80px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.entendaMais .titulo{
+    color:var(--h2-claro);
+    font-size: var(--h2-tamanho);
+    font-family: var(--h2-fonte);
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.entendaMais .container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.entendaMais .container .conteudo{
+    max-width: 400px;
+    padding: 30px;
+}
+
+.entendaMais .container .conteudo .titulo{
+    color:var(--h3);
+    font-size: var(--h3-tamanho);
+    font-family: var(--h3-fonte);
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    
+}
+
+.entendaMais .container .conteudo .texto{
+    color:var(--descricao-padrao);
+    font-size: var(--descricao-padrao-tamanho);
+    font-family: var(--descricao-padrao-fonte);
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 17px;
+}
+
+.entendaMais .container .conteudo:hover{
+    background-color: #D7EDF1;
+    border-radius: 30px;
+}
+
+.entendaMais .logoBJ{
+    margin-top: 50px;
+}
+
+
+/* tablet */
+@media (max-width:768px){
+    .entendaMais .container {
+        gap: 5px;
+    }
+
+    .entendaMais .container .conteudo{
+        padding: 20px;
+    }
+
+    .entendaMais .logoBJ{
+        width: 250px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:480px){
+    .entendaMais {
+        margin-top: 50px;
+    }
+    
+    .entendaMais .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .entendaMais .container .conteudo{
+        max-width: 300px;
+    }
+}
