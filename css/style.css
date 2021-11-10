@@ -69,13 +69,13 @@
 
   --cor-footer: #ffffff;
   --cor-header: #84b5be;
-  --cor-fundo-header: #D7EDF1;
+  --cor-fundo-header: #d7edf1;
   --cor-fundo-header-hover: #ffffff;
   --cor-header-hover: #161571;
   --cor-subheader-hover: #ffffff;
   --cor-fundo-menu-mobile: #ffffff;
-  --cor-fundo-menu-mobile-ativo: #D7EDF1;
-  --cor-fundo-menu-mobile-contato: #0D4068;
+  --cor-fundo-menu-mobile-ativo: #d7edf1;
+  --cor-fundo-menu-mobile-contato: #0d4068;
   --cor-menu-mobile-contato: #ffffff;
   --forms: #000000;
   --enviar: #ffffff;
@@ -87,7 +87,7 @@
   --descricao-rede-delta-home: #cfab00;
   --descricao-cases: #161571;
   --aluno-ou-professor: #161571;
-  --fundo-azul-home: #D7EDF1;
+  --fundo-azul-home: #d7edf1;
 }
 
 /*tablet*/
@@ -168,7 +168,9 @@ nav {
   text-transform: uppercase;
 }
 
-#menu-item-ativo > a, #menu-item-ativo > a:visited, #menu-item-ativo > span {
+#menu-item-ativo > a,
+#menu-item-ativo > a:visited,
+#menu-item-ativo > span {
   color: var(--cor-header-hover);
 }
 
@@ -179,20 +181,22 @@ nav {
 
 .menu-item:hover {
   background-color: var(--cor-fundo-header-hover);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .menu .menu-item:hover > * {
   color: var(--cor-header-hover);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.menu-item > a, .menu-item > a:visited {
+.menu-item > a,
+.menu-item > a:visited {
   text-decoration: none;
   color: var(--cor-header);
 }
 
-.menu-item > a, .menu-item > span {
+.menu-item > a,
+.menu-item > span {
   padding: 1.5rem;
   display: flex;
   align-items: center;
@@ -213,7 +217,8 @@ nav {
   display: inline-block;
 }
 
-.submenu a, .submenu a:visited {
+.submenu a,
+.submenu a:visited {
   font: bold var(--sub-header-tamanho) var(--sub-header-fonte), serif;
   color: var(--cor-header-hover);
   text-decoration: none;
@@ -229,10 +234,11 @@ nav {
 
 .submenu-item:hover {
   background-color: var(--cor-header-hover);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.submenu-item:hover > a, .submenu-item:hover > a:visited {
+.submenu-item:hover > a,
+.submenu-item:hover > a:visited {
   color: var(--cor-fundo-header-hover);
 }
 
@@ -274,7 +280,8 @@ nav {
   background-color: var(--cor-fundo-menu-mobile-ativo);
 }
 
-#mobile-item-ativo a, #mobile-item-ativo a:visited {
+#mobile-item-ativo a,
+#mobile-item-ativo a:visited {
   font-weight: bold;
 }
 
@@ -282,11 +289,13 @@ nav {
   background-color: var(--cor-fundo-menu-mobile-contato);
 }
 
-.menu-mobile-item.menu-contato a, .menu-mobile-item.menu-contato a:visited {
+.menu-mobile-item.menu-contato a,
+.menu-mobile-item.menu-contato a:visited {
   color: var(--cor-menu-mobile-contato);
 }
 
-.menu-mobile a, .menu-mobile a:visited {
+.menu-mobile a,
+.menu-mobile a:visited {
   display: block;
   font: var(--menu-mobile-tamanho) var(--menu-mobile-fonte), sans-serif;
   color: var(--cor-header);
@@ -299,11 +308,12 @@ nav {
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
-  }  
+  }
 
   #btn-mobile {
     display: block;
-  
+  }
+}
 /* Botão Geral */
 /* Para a classe do botão geral é necessário usar uma outra classe junta, a classe borda.
     Exemplo: <button class="btn-padrao borda">Quero conhecer</button>
