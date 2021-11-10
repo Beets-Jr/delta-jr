@@ -150,7 +150,7 @@
   background-color: var(--cor-fundo-header);
 }
 
-.logo {
+.logo-menu {
   height: 70px;
   padding: 2rem;
 }
@@ -378,17 +378,17 @@ abbr {
   justify-content: flex-end;
 }
 
-/*.logo,
+.logo-footer,
 .redes,
 .info {
   flex: 1;
-}*/
+}
 
-.logo {
+.logo-footer {
   text-align: center;
 }
 
-.logo img {
+.logo-footer img {
   width: 180px;
 }
 
@@ -450,7 +450,7 @@ abbr {
 }
 
 @media screen and (max-width: 768px) {
-  .logo img {
+  .logo-footer img {
     width: 120px;
   }
 
@@ -466,11 +466,11 @@ abbr {
     flex-direction: column;
   }
 
-  .logo {
+  .logo-footer {
     text-align: center;
   }
 
-  .logo img {
+  .logo-footer img {
     width: 160px;
   }
 
