@@ -46,19 +46,69 @@
             <button type="button" class="collapsible">abrir filtros</button>
             <div class="content">
                 <p>Nome:</p>
-                <input id="busca" type="text" placeholder="Filtre professores"/>
+                <input id="busca" type="text" placeholder="Buscar pelo nome" autocomplete="off"/>
 
                 <p>Semestre:</p>
-                <input type="number" min="1" max="9"/>
+                <input type="number" min="1" max="9" autocomplete="off"/>
+
+                <p>Dia da semana:</p>
+                <div class="dias-semana">
+                    <div class="dia">
+                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                        <label for="scales">domingo</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                        <label for="scales">segunda</label>
+                    </div>
+
+                    <div class="dia">
+                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                        <label for="scales">terça</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                        <label for="scales">quarta</label>
+                    </div>
+
+                    <div class="dia">
+                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                        <label for="scales">quinta</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                        <label for="scales">sexta</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                        <label for="scales">sábado</label>
+                    </div>
+                </div>
+                
+
+                <p>Período do dia:</p>
+                <select>
+                    <option value="" selected>Todos os períodos</option>
+                    <option value="manha">manhã</option>
+                    <option value="tarde">tarde</option>
+                    <option value="cursinho">noite</option>
+                </select>
 
                 <p>Dá aulas para:</p>
                 <select>
-                    <option hidden>Público-alvo</option>
-                    <option value="6° ao 9° ano">6° ao 9° ano</option>
-                    <option value="enisno médio">Ensino Médio</option>
+                    <option value="" selected>Todos os públicos</option>
+                    <option value="6 ao 9 ano">6° ao 9° ano</option>
+                    <option value="enisno medio">Ensino Médio</option>
                     <option value="cursinho">Cursinho</option>
                     <option value="ensino superior">Ensino Superior</option>
                 </select>
+
+                <p>Valor máximo: R$<span id="demo"></span></p>
+                <input type="range" min="10" max="300" value="50" class="slider" id="myRange" step="10" autocomplete="off">                
             </div>
         </div>
 
