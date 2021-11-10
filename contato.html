@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contato.css">
+  <title>Delta Jr.</title>
+</head>
+
+<body>
+  <section class="forms-todo">
+    <h1 class="titulo-forms">Gostou? Vamos conversar!</h1>
+    <form class="forms" action="https://formspree.io/f/moqyongz" method="post">
+      <input type="text" name="campo1" placeholder="Nome*" required>
+      <input type="email" name="campo2" placeholder="E-mail*" required>
+      <input name="campo3" placeholder="Telefone" required></input>
+      <select id="assunto" name="campo4" required>
+        <option>Assunto* - o que procura</option>
+        <option value="quero-ser-professor">Quero ser professor</option>
+        <option value="quero-contatar-a-delta">Quero contratar a Delta</option>
+        <option value="quero-fazer-uma-parceria">Quero fazer uma parceria</option>
+        <option value="outros">Outros</option>
+      </select>
+      <input type="textarea" name="campo5" placeholder="Mensagem*" required>
+
+      <div class="botao-forms">
+        <input type="submit" value="enviar">
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>
