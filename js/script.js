@@ -6,4 +6,6 @@ $('.slide-equipe').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
+    autoplay:true,
+    autoplaySpeed: 2000
 });

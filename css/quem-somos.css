@@ -64,8 +64,8 @@
   .slide-equipe .slick-next.slick-arrow:after {
     content: "";
     position: absolute;
-    border-top: 3px solid #196C91;
-    border-right: 3px solid #196C91;
+    border-top: 3px solid var(--h2-claro);
+    border-right: 3px solid var(--h2-claro);
     border-left: 0;
     border-bottom: 0;
     background: transparent;
@@ -76,8 +76,8 @@
 .slide-equipe .slick-prev.slick-arrow:after {
     content: "";
     position: absolute;
-    border-top: 3px solid #196C91;
-    border-right: 3px solid #196C91;
+    border-top: 3px solid var(--h2-claro);
+    border-right: 3px solid var(--h2-claro);
     border-left: 0;
     border-bottom: 0;
     background: transparent;
@@ -90,12 +90,12 @@
       width: clamp(600px, 352px + 31vw, 940px);
   }
   .slick-dots li button:before{
-      color: #196C91 !important;
+      color: var(--h2-claro) !important;
       opacity: 1 !important;
       font-size: 12px !important;
   }
   .slick-dots li.slick-active button:before{
-      color: #161571 !important;
+      color: var(--cor-header-hover) !important;
   }
   .slick-dots{
       position: static !important;
