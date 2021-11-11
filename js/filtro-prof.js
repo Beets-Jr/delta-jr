@@ -1,49 +1,70 @@
-// Filtro para nome do professor
-document.getElementById('busca').addEventListener('keyup', function() {
-  let pesquisa = this.value.toLowerCase()
-  let nomesProfessores = document.querySelectorAll('.prof-nome')
+// Filtro
+const busca = document.getElementById("busca")
+const inputSemestre = document.getElementById("semestre")
+const inputPeriodoDia = document.getElementById("periodo-dia")
+const inputPublicoAula = document.getElementById("publico-aula")
+const inputPreco = document.getElementById("preco")
+const professores = document.querySelectorAll(".professor")
 
-  nomesProfessores.forEach((nomeProfessor) => {
-    let nomeProfessorTexto =  nomeProfessor.textContent.toLowerCase()
-    if (nomeProfessorTexto.includes(pesquisa)) {
-      nomeProfessor.closest('.professor').classList.remove('hide')
+function filtrar(event) {
+  event.preventDefault()
+  let pesquisa = busca.value.toLowerCase()
+  let semestre = inputSemestre.value
+  let periodo = inputPeriodoDia.value
+  let publico = inputPublicoAula.value
+  let preco = inputPreco.value
+
+  professores.forEach((professor) => {
+    let nomeProfessor = professor.dataset.nome.toLowerCase()
+    let precoDesejado =
+      (preco !== "" && professor.dataset.precoMin <= preco) || preco === ""
+    if (
+      nomeProfessor.includes(pesquisa) &&
+      professor.dataset.semestre === semestre &&
+      professor.dataset.horario === periodo &&
+      professor.dataset.publico === publico &&
+      precoDesejado
+    ) {
+      professor.classList.remove("hide")
     } else {
-	    nomeProfessor.closest('.professor').classList.add('hide')
+      professor.classList.add("hide")
     }
   })
-})
+}
 
 // Implementação do Collapsible (lista oculta, toggle list)
-var coll = document.getElementsByClassName("collapsible");
-var i;
+var coll = document.getElementsByClassName("collapsible")
+var i
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active")
+    var content = this.nextElementSibling
     if (content.style.display === "block" || content.style.display === "flex") {
-      content.style.display = "none";
+      content.style.display = "none"
     } else {
-      content.style.display = "flex";
-      content.style.flexDirection = "column";
-      content.style.margin = "0 auto";
-      content.style.maxWidth = "300px";
-      content.style.gap = "10px";
+      content.style.display = "flex"
+      content.style.flexDirection = "column"
+      content.style.margin = "0 auto"
+      content.style.maxWidth = "300px"
+      content.style.gap = "10px"
     }
-  });
+  })
 }
 
 // Animação do slider - valor máximo da aula (R$)
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
+var output = document.getElementById("demo")
+output.innerHTML = inputPreco.value
+
+inputPreco.oninput = function () {
+  output.innerHTML = this.value
 }
 
 // Função que define o slider de valor da aula para seu valor máximo quando a página é recarregada
-window.onload = function() {
-  document.getElementById('myRange').value = '300';
-  output.innerHTML = document.getElementById('myRange').value;
-}
+const reset = document.getElementById("reset-button")
+
+reset.addEventListener("click", () => {
+  document.getElementById("preco").value = "300"
+  output.innerHTML = document.getElementById("preco").value
+})

@@ -43,63 +43,63 @@
     <section class="nossos-professores">
         <h2>Nossos Professores</h2>
         <div class="barra-busca">
-            <button type="button" class="collapsible">abrir filtros</button>
-            <div class="content">
-                <p>Nome:</p>
+            <button type="button" class="collapsible">filtros</button>
+            <form class="content" onsubmit="filtrar(event)">
+                <label>Nome:</label>
                 <input id="busca" type="text" placeholder="Buscar pelo nome" autocomplete="off"/>
 
-                <p>Semestre:</p>
-                <input type="number" min="1" max="9" autocomplete="off"/>
+                <label>Semestre:</label>
+                <input id="semestre" type="number" min="1" max="9" autocomplete="off"/>
 
-                <p>Dia da semana:</p>
+                <label>Dia da semana:</label>
                 <div class="dias-semana">
                     <div class="dia">
-                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                        <input type="checkbox" autocomplete="off">
                         <label for="scales">domingo</label>
                     </div>
                     
-                    <div>
-                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                    <div class="dia">
+                        <input type="checkbox" autocomplete="off">
                         <label for="scales">segunda</label>
                     </div>
 
                     <div class="dia">
-                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                        <input type="checkbox" autocomplete="off">
                         <label for="scales">terça</label>
                     </div>
                     
-                    <div>
-                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                    <div class="dia">
+                        <input type="checkbox" autocomplete="off">
                         <label for="scales">quarta</label>
                     </div>
 
                     <div class="dia">
-                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                        <input type="checkbox" autocomplete="off">
                         <label for="scales">quinta</label>
                     </div>
                     
-                    <div>
-                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                    <div class="dia">
+                        <input type="checkbox" autocomplete="off">
                         <label for="scales">sexta</label>
                     </div>
 
-                    <div>
-                        <input type="checkbox" id="scales" name="scales" autocomplete="off">
+                    <div class="dia">
+                        <input type="checkbox" autocomplete="off">
                         <label for="scales">sábado</label>
                     </div>
                 </div>
                 
 
-                <p>Período do dia:</p>
-                <select>
+                <label>Período do dia:</label>
+                <select id="periodo-dia">
                     <option value="" selected>Todos os períodos</option>
                     <option value="manha">manhã</option>
                     <option value="tarde">tarde</option>
-                    <option value="cursinho">noite</option>
+                    <option value="noite">noite</option>
                 </select>
 
-                <p>Dá aulas para:</p>
-                <select>
+                <label>Dá aulas para:</label>
+                <select id="publico-aula">
                     <option value="" selected>Todos os públicos</option>
                     <option value="6 ao 9 ano">6° ao 9° ano</option>
                     <option value="enisno medio">Ensino Médio</option>
@@ -107,13 +107,18 @@
                     <option value="ensino superior">Ensino Superior</option>
                 </select>
 
-                <p>Valor máximo: R$<span id="demo"></span></p>
-                <input type="range" min="10" max="300" value="50" class="slider" id="myRange" step="10" autocomplete="off">                
-            </div>
+                <label>Valor máximo: R$<span id="demo"></span></label>
+                <input type="range" min="10" max="300" value="" class="slider" id="preco" step="10" autocomplete="off">  
+                
+                <div class="botoes-forms-filtro">
+                    <button type="reset" id="reset-button">Limpar filtros</button>
+                    <button type="submit">Aplicar filtros</button>
+                </div>
+            </form>
         </div>
 
         <ul id="lista-professores">
-            <li class="professor">
+            <li class="professor" data-nome="joao" data-semestre="2" data-dias="" data-horario="manha" data-publico="6 ao 9 ano" data-preco_min="" data-preco_max="' data-estrelas="">
                 <div class="infos-nossos-professores">
                     <img class="img-nossos-professores" src="img/circulo-300.png" alt="Circulo">
                     <div>
@@ -143,7 +148,7 @@
                 </div>
             </li>
 
-            <li class="professor">
+            <li class="professor" data-nome="maria" data-semestre="" data-dias="" data-horario="manha" data-publico="cursinho" data-preco_min="" data-preco_max="" data-estrelas="">
                 <div class="infos-nossos-professores">
                     <img class="img-nossos-professores" src="img/circulo-300.png" alt="Circulo">
                     <div>
