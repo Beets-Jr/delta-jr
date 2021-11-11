@@ -4,6 +4,7 @@ const inputSemestre = document.getElementById("semestre")
 const inputPeriodoDia = document.getElementById("periodo-dia")
 const inputPublicoAula = document.getElementById("publico-aula")
 const inputPreco = document.getElementById("preco")
+const inputDiaSemana = document.getElementsByClassName("dia-check")
 const professores = document.querySelectorAll(".professor")
 
 function filtrar(event) {
@@ -13,16 +14,82 @@ function filtrar(event) {
   let periodo = inputPeriodoDia.value
   let publico = inputPublicoAula.value
   let preco = inputPreco.value
+  let dias = Array.apply(false, Array(7))
+  let contadorDiasFiltrados = 0
+  for (let i = 0; i < inputDiaSemana.length; i++) {
+    if (inputDiaSemana[i].checked == true) {
+      dias[i] = true
+      contadorDiasFiltrados++
+    } else {
+      dias[i] = false
+    }
+  }
 
   professores.forEach((professor) => {
     let nomeProfessor = professor.dataset.nome.toLowerCase()
-    let precoDesejado =
-      (preco !== "" && professor.dataset.precoMin <= preco) || preco === ""
+    let diasDisponiveisString = professor.dataset.dias.toLowerCase()
+    let flagDisponivel = false
+    if (contadorDiasFiltrados != 0) {
+      let diasDisponiveisVetor = Array.apply(false, Array(7))
+      if (diasDisponiveisString.indexOf("dom") !== -1) {
+        diasDisponiveisVetor[0] = true
+      } else {
+        diasDisponiveisVetor[0] = false
+      }
+
+      if (diasDisponiveisString.indexOf("seg") !== -1) {
+        diasDisponiveisVetor[1] = true
+      } else {
+        diasDisponiveisVetor[1] = false
+      }
+
+      if (diasDisponiveisString.indexOf("ter") !== -1) {
+        diasDisponiveisVetor[2] = true
+      } else {
+        diasDisponiveisVetor[2] = false
+      }
+
+      if (diasDisponiveisString.indexOf("qua") !== -1) {
+        diasDisponiveisVetor[3] = true
+      } else {
+        diasDisponiveisVetor[3] = false
+      }
+
+      if (diasDisponiveisString.indexOf("qui") !== -1) {
+        diasDisponiveisVetor[4] = true
+      } else {
+        diasDisponiveisVetor[4] = false
+      }
+
+      if (diasDisponiveisString.indexOf("sex") !== -1) {
+        diasDisponiveisVetor[5] = true
+      } else {
+        diasDisponiveisVetor[5] = false
+      }
+
+      if (diasDisponiveisString.indexOf("sab") !== -1 || diasDisponiveisString.indexOf("sáb") !== -1) {
+        diasDisponiveisVetor[6] = true
+      } else {
+        diasDisponiveisVetor[6] = false
+      }
+
+      for (let j = 0; j < 7; j++) {
+        if (dias[j] && diasDisponiveisVetor[j]) {
+          flagDisponivel = true;
+          break;
+        }
+      }
+    } else {
+      flagDisponivel = true
+    }
+
+    let precoDesejado = (preco !== "300" && professor.dataset.precoMin <= preco) || preco === "300"
     if (
       nomeProfessor.includes(pesquisa) &&
-      professor.dataset.semestre === semestre &&
-      professor.dataset.horario === periodo &&
-      professor.dataset.publico === publico &&
+      (professor.dataset.semestre === semestre || semestre === "") &&
+      (professor.dataset.horario === periodo || periodo === "") &&
+      (professor.dataset.publico === publico || publico === "") &&
+      flagDisponivel &&
       precoDesejado
     ) {
       professor.classList.remove("hide")
@@ -67,4 +134,12 @@ const reset = document.getElementById("reset-button")
 reset.addEventListener("click", () => {
   document.getElementById("preco").value = "300"
   output.innerHTML = document.getElementById("preco").value
+  professores.forEach((professor) => {
+      professor.classList.remove("hide")
+  })
 })
+
+window.onload = function() {
+  document.getElementById('preco').value = '300';
+  output.innerHTML = document.getElementById('preco').value;
+}
