@@ -1,0 +1,100 @@
+.container {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.intro {
+  width: 100%;
+  height: 300px;
+  background: url("/img/logo-preenchimento-peq.png") no-repeat center,
+    linear-gradient(to bottom, #d7edf1, #ffffff);
+  padding-top: 10px;
+}
+
+.intro h1 {
+  font-family: var(--h1-fonte);
+  font-size: var(--h1-tamanho);
+  color: var(--h1-padrao);
+  text-align: center;
+  margin-top: 110px;
+}
+
+.descricao-servicos {
+  text-align: center;
+  font-family: var(--descricao-padrao-fonte);
+  font-size: var(--descricao-padrao-tamanho);
+  color: var(--descricao-padrao);
+}
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .container {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .container {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10%;
+  }
+}
+
+/* INSCRIÇÃO ALUNOS E PROFESSORES */
+.rede-delta-alunos-prof {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0 60px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.alunos-prof-item {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alunos-prof-item p {
+    text-align: center;
+    color: var(--aluno-ou-professor);
+    font-family: var(--aluno-ou-professor-fonte);
+    font-weight: bold;
+    font-size: var(--aluno-ou-professor-tamanho);
+}
+
+.alunos-prof-item img {
+    max-width: 100%;
+    width: 120px;
+    height: auto;
+}
+
+.alunos-prof-item-desc {
+    height: 220px;
+    margin: 40px 85px 0 85px;
+}
+
+@media only screen and (max-width: 768px) {
+    .alunos-prof-item {
+        flex-basis: 100%;
+    }
+
+    .alunos-prof-item-desc {
+        height: auto;
+        margin: 40px 30px 40px 30px;
+    }
+
+    .rede-delta-alunos-prof {
+        gap: 80px;
+    }
+    
+    .alunos-prof-item p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
