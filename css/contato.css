@@ -19,6 +19,13 @@
   padding: 30px 300px;
 }
 
+.forms p {
+  text-align: center;
+  font-family: var(--forms-fonte);
+  font-weight: bold;
+  font-size: var(--forms-tamanho);
+}
+
 .forms input,
 .forms select {
   font-family: var(--forms-fonte);
