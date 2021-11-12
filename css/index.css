@@ -79,7 +79,6 @@
 .titulo-secao {
     font: bold var(--h2-tamanho) var(--h2-fonte), serif;
     color: var(--h2-escuro);
-    position: relative;
     text-align: center;
     margin: var(--h2-tamanho) 0;
 }
@@ -180,7 +179,7 @@
 /* Seção Rede Delta */
 #rede-delta {
     text-align: center;
-    padding: 120px 10%;
+    padding: 120px 10% 0 120px;
 }
 
 .txt-rede-delta {

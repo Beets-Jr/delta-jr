@@ -19,6 +19,12 @@
   padding: 30px 300px;
 }
 
+.forms p {
+  text-align: right;
+  font-family: var(--forms-fonte);
+  font-size: var(--forms-tamanho);
+}
+
 .forms input,
 .forms select {
   font-family: var(--forms-fonte);
@@ -28,6 +34,14 @@
   border-radius: 10px;
   border: 2px solid #e5e5e5;
   color: #393939;
+  padding-left: 10px;
+  background-color: white;
+}
+
+.botao-forms :hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .botao-forms {
