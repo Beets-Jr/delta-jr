@@ -118,6 +118,11 @@ function filtrar(event) {
 
     const div = document.getElementById("filtro")
     div.appendChild(paragrafo)
+  } else {
+    p = document.getElementById("filtro-sem-resultados")
+    if (p) {
+      p.remove()
+    }
   }
 }
 
