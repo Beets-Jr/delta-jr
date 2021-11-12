@@ -2,10 +2,11 @@ $('.slide-equipe').slick({
     dots: true,
     infinite: true,
     speed: 500,
-    arrows: true,
+    arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     autoplay:true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 3000,
+    fade:true
 });
