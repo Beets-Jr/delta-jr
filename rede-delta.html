@@ -42,7 +42,7 @@
 
     <section class="nossos-professores">
         <h2>Nossos Professores</h2>
-        <div class="barra-busca">
+        <div class="barra-busca" id="filtro">
             <button type="button" class="collapsible">filtros</button>
             <form class="content" onsubmit="filtrar(event)">
                 <label>Nome:</label>
@@ -108,7 +108,7 @@
                 </select>
 
                 <label>Valor máximo: R$<span id="demo"></span></label>
-                <input type="range" min="10" max="300" value="" class="slider" id="preco" step="10" autocomplete="off">  
+                <input type="range" min="10" max="300" value="300" class="slider" id="preco" step="10">  
                 
                 <div class="botoes-forms-filtro">
                     <button type="reset" id="reset-button">Limpar filtros</button>
@@ -118,16 +118,16 @@
         </div>
 
         <ul id="lista-professores">
-            <li class="professor" data-nome="joao" data-semestre="2" data-dias="domingo" data-horario="manha" data-publico="6 ao 9 ano" data-preco_min="70" data-preco_max=""" data-estrelas="">
+            <li class="professor" data-nome="joao" data-semestre="2" data-dias="domingo" data-horario="manha" data-publico="6 ao 9 ano" data-precomin="70" data-precomax="100" data-estrelas="">
                 <div class="infos-nossos-professores">
                     <img class="img-nossos-professores" src="img/circulo-300.png" alt="Circulo">
                     <div>
                         <ul>
                             <li class="prof-nome">João</li>
-                            <li>Semestre que está no curso</li>
-                            <li>Dias da semana disponíveis e horários</li>
-                            <li>Dá aula para:</li>
-                            <li>Faixa de preço:</li>
+                            <li>2° semestre</li>
+                            <li>domingo, de manhã</li>
+                            <li>6° ao 9° ano</li>
+                            <li>até R$ 70</li>
                             <li>Descrição/Bio:</li>
                             <li>Comentários:</li>
                         </ul>
@@ -148,16 +148,16 @@
                 </div>
             </li>
 
-            <li class="professor" data-nome="maria" data-semestre="3" data-dias="domingo segunda terça quarta quinta sexta sábado" data-horario="manha" data-publico="cursinho" data-preco_min="50" data-preco_max="" data-estrelas="">
+            <li class="professor" data-nome="maria" data-semestre="3" data-dias="domingo segunda terça quarta quinta sexta sábado" data-horario="noite" data-publico="cursinho" data-precomin="50" data-precomax="80" data-estrelas="">
                 <div class="infos-nossos-professores">
                     <img class="img-nossos-professores" src="img/circulo-300.png" alt="Circulo">
                     <div>
                         <ul>
                             <li class="prof-nome">Maria</li>
-                            <li>Semestre que está no curso</li>
-                            <li>Dias da semana disponíveis e horários</li>
-                            <li>Dá aula para:</li>
-                            <li>Faixa de preço:</li>
+                            <li>3° semestre</li>
+                            <li>todos os dias, à noite</li>
+                            <li>cursinho</li>
+                            <li>até R$ 80</li>
                             <li>Descrição/Bio:</li>
                             <li>Comentários:</li>
                         </ul>

@@ -123,6 +123,14 @@
   gap: 20px;
 }
 
+.barra-busca p {
+  margin: 0 auto;
+  font-size: var(--descricao-padrao-tamanho);
+  font-family: var(--descricao-padrao-fonte);
+  color: var(--descricao-padrao);
+  padding: 50px 0 100px 0;
+}
+
 .collapsible {
   margin: 0 auto;
   padding: 10px;
