@@ -24,7 +24,6 @@
   .main-banner {
     margin: 0 auto;
     padding: 0px;
-    position: relative;
     width: 100%;
     background-image: linear-gradient(to bottom, #d7edf1, #ffffff);
     background-size: cover;
@@ -286,8 +285,7 @@
 
 /* Mascote e Entenda Mais */
 .mascote{
-    width: 80%;
-    margin: 50px auto 0 auto;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -307,12 +305,13 @@
 .mascote .container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-around;
+    width: 90%;
+    padding: 0;
 }
 
 .mascote .container .texto{
-    max-width: 500px;
+    max-width: 700px;
     color: var(--descricao-padrao);
     font-size: var(--descricao-padrao-tamanho);
     font-family: var(--descricao-padrao-fonte);
@@ -326,11 +325,19 @@
 
 @media (max-width: 768px){
     .mascote {
-        width: 95%;
+        margin: 0;
+    }
+    .mascote .container{
+        padding: 0;
+    }
+
+    .mascote .container .texto{
+        margin-left: 5px;
     }
 
     .mascote .container .logoDelta{
         width: 200px;
+        margin-right: 0;
     }
 }
 
@@ -341,15 +348,18 @@
 
     .mascote .container{
         flex-direction: column-reverse;
+        padding: 0;
     }
     
     .mascote .container .texto{
         text-align: center;
         max-width: 230px;
+        margin: 0;
     }
 
     .mascote .container .logoDelta{
         width:174px;
+        margin: 0;
     }
 }
 

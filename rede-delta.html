@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rede-delta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/menu.js" defer></script>
+    <title>Delta Jr. | Rede Delta</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./img/logo.png" alt="Logo da Delta Júnior" class="logo-menu">
+        <nav id="nav">
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="quem-somos.html">Quem Somos</a></li>
+                <li id="menu-item-ativo" class="menu-item dropdown-menu">
+                    <span>Projetos</span>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="servicos-e-produtos.html">Serviços e Produtos</a></li>
+                        <li class="submenu-item"><a href="rede-delta.html">Rede Delta</a></li>
+                        <li class="submenu-item"><a href="cases.html">Cases</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <button id="btn-mobile"><img src="./img/icon-menu.svg" alt="Ícone de menu"></button>
+            <ul class="menu-mobile">
+                <li class="menu-mobile-item"><a href="index.html">Home</a></li>
+                <li class="menu-mobile-item"><a href="quem-somos.html">Quem Somos</a></li>
+                <li class="menu-mobile-item"><a href="servicos-e-produtos.html">Serviços e Produtos</a></li>
+                <li id="mobile-item-ativo" class="menu-mobile-item"><a href="rede-delta.html">Rede Delta</a></li>
+                <li class="menu-mobile-item"><a href="cases.html">Cases</a></li>
+                <li class="menu-mobile-item menu-contato"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>Rede Delta</h1>
+    </section>
+
+    <div class="descricao-servicos container">
+        <p>Este projeto tem como objetivo criar uma comunidade de professores da Unicamp e alunos que buscam aulas particulares de matemática, por meio do site da Delta.</p>
+    </div>
+
+    <section class="rede-delta-alunos-prof">
+        <div class="alunos-prof-item">
+            <img src="img/icones/professor.svg" alt="Ícone de um capelo, representando a associação de professores à Delta Júnior"></img>
+            <div class="alunos-prof-item-desc">
+                <p>Se você é um aluno de Licenciatura em Matemática da Unicamp e quer se tornar um professor associado</p>
+            </div>
+
+            <button class="btn-padrao borda" type="button" onclick="window.location.href='contato.html'" style="cursor: pointer;">Clique aqui</button>
+        </div>
+
+        <div class="alunos-prof-item">
+            <img src="img/icones/aluno.svg" alt="Ícone de um lápis, representando a inscrição como aluno dos professores da Delta Júnior"></img>
+            <div class="alunos-prof-item-desc">
+                <p>Se você é um aluno em busca de um professor de matemática, veja o painel abaixo com nossos professores associados e escolha o que mais se encaixa com seu perfil</p>
+            </div>
+            <button class="btn-padrao borda" type="button" rel="nofollow" onclick="window.location.href='https://forms.gle/k9dH4QHMWB6vvSP37'" style="cursor: pointer;">Clique aqui</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="logo-footer">
+            <img src="img/icones/logo_branca_rodape.png" alt="Logo branco da Delta Jr">
+        </div>
+        <div class="redes">
+            <p>Nossas redes</p>
+            <a href="https://www.instagram.com/delta__junior/" target="_blank"><img src="img/icones/instagram.png" alt="ícone amarelo instagram"></a>
+            <a href="https://www.linkedin.com/company/deltajr/" target="_blank"><img src="img/icones/linkedin.png" alt="ícone amarelo linkedin"></a>
+            <p>@Copyright 2021</p>
+            <span><a href="https://www.beetsjr.com.br" target="_blank">Desenvolvido por Beets Jr</a></span>
+
+        </div>
+        <div class="info">
+            <div class="container-menor">
+                <div><img src="img/icones/carta.png" alt="ícone de carta"></div>
+                <div>
+                    <p>deltajr@unicamp.br</p>
+                </div>
+            </div>
+            <div class="container-maior">
+                <div><img src="img/icones/pin.png" alt="ícone localização"></div>
+                <div>
+                    <p>Rua Sérgio Buarque de Holanda, 651 -<br>Cidade Universtária, Campinas/SP</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

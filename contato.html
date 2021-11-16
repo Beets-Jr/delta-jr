@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contato.css">
+
+  <script type="text/javascript" src="js/menu.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Delta Jr. | Contato</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <img src="./img/logo.png" alt="Logo da Delta Júnior" class="logo-menu">
+    <nav id="nav">
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="quem-somos.html">Quem Somos</a></li>
+        <li class="menu-item dropdown-menu">
+          <span>Projetos</span>
+          <ul class="submenu">
+            <li class="submenu-item"><a href="servicos-e-produtos.html">Serviços e Produtos</a></li>
+            <li class="submenu-item"><a href="rede-delta.html">Rede Delta</a></li>
+            <li class="submenu-item"><a href="cases.html">Cases</a></li>
+          </ul>
+        </li>
+        <li id="menu-item-ativo" class="menu-item"><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <button id="btn-mobile"><img src="./img/icon-menu.svg" alt="Ícone de menu"></button>
+      <ul class="menu-mobile">
+        <li class="menu-mobile-item"><a href="index.html">Home</a></li>
+        <li class="menu-mobile-item"><a href="quem-somos.html">Quem Somos</a></li>
+        <li class="menu-mobile-item"><a href="servicos-e-produtos.html">Serviços e Produtos</a></li>
+        <li class="menu-mobile-item"><a href="rede-delta.html">Rede Delta</a></li>
+        <li class="menu-mobile-item"><a href="cases.html">Cases</a></li>
+        <li class="menu-mobile-item menu-contato"><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="forms-todo">
+    <h1 class="titulo-forms">Gostou? Vamos conversar!</h1>
+    <form class="forms" action="https://formspree.io/f/moqyongz" method="post">
+      <input type="text" name="Nome" placeholder="Nome*" required>
+      <input type="email" name="Email" placeholder="E-mail*" required>
+      <input name="Telefone" data-ls-module="charCounter" maxlength="14" placeholder="Telefone" required></input>
+      <select id="assunto" name="Assunto" required>
+        <option hidden>Assunto* - o que procura</option>
+        <option value="quero-ser-professor">Quero ser professor da Rede Delta</option>
+        <option value="quero-contatar-a-delta">Quero contratar a Delta</option>
+        <option value="quero-fazer-uma-parceria">Quero fazer uma parceria</option>
+        <option value="outros">Outros</option>
+      </select>
+      <input type="textarea" name="Mensagem" placeholder="Mensagem*" required>
+
+      <p>Os campos com "*" são obrigatórios.</p>
+      <div class="botao-forms">
+        <input type="submit" value="enviar">
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="logo-footer">
+        <img src="img/icones/logo_branca_rodape.png" alt="Logo branco da Delta Jr">
+    </div>
+    <div class="redes">
+        <p>Nossas redes</p>
+        <a href="https://www.instagram.com/delta__junior/" target="_blank"><img src="img/icones/instagram.png" alt="ícone amarelo instagram"></a>
+        <a href="https://www.linkedin.com/company/deltajr/" target="_blank"><img src="img/icones/linkedin.png" alt="ícone amarelo linkedin"></a>
+        <p>@Copyright 2021</p>
+        <span><a href="https://www.beetsjr.com.br" target="_blank">Desenvolvido por Beets Jr</a></span>
+
+    </div>
+    <div class="info">
+        <div class="container-menor">
+            <div><img src="img/icones/carta.png" alt="ícone de carta"></div>
+            <div>
+                <p>deltajr@unicamp.br</p>
+            </div>
+        </div>
+        <div class="container-maior">
+            <div><img src="img/icones/pin.png" alt="ícone localização"></div>
+            <div>
+                <p>Rua Sérgio Buarque de Holanda, 651 -<br>Cidade Universtária, Campinas/SP</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

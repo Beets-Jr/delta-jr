@@ -1,0 +1,88 @@
+.titulo-forms {
+  font-family: var(--forms-fonte);
+  font-weight: bold;
+  font-size: var(--h2-tamanho);
+  color: var(--h2-escuro);
+  text-align: center;
+  margin: 30px;
+}
+
+.forms-todo {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 300px;
+}
+
+.forms p {
+  text-align: right;
+  font-family: var(--forms-fonte);
+  font-size: var(--forms-tamanho);
+}
+
+.forms input,
+.forms select {
+  font-family: var(--forms-fonte);
+  font-size: var(--forms-tamanho);
+  font-weight: bold;
+  height: 35px;
+  border-radius: 10px;
+  border: 2px solid #e5e5e5;
+  color: #393939;
+  padding-left: 10px;
+  background-color: white;
+}
+
+.botao-forms :hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.botao-forms {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}
+
+.botao-forms input {
+  background-color: #fcd108;
+  color: var(--enviar);
+  font-family: var(--botoes-fonte);
+  font-size: var(--botoes-tamanho);
+  font-weight: bold;
+  border-radius: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .titulo-forms {
+    font-size: var(--h2-tamanho);
+  }
+
+  .forms {
+    padding: 20px 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titulo-forms {
+    font-size: var(--h2-tamanho);
+  }
+
+  .forms {
+    padding: 10px 50px;
+  }
+
+  .forms input,
+  .forms select {
+    font-size: var(--forms-tamanho);
+  }
+}

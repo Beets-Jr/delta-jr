@@ -6,11 +6,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script type="text/javascript" src="js/menu.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Delta Jr.</title>
 </head>
 
 <body>
+  <header class="cabecalho">
+    <img src="img/logo.png" alt="Logo da Delta Júnior" class="logo-menu">
+    <nav id="nav">
+      <ul class="menu">
+        <li id="menu-item-ativo" class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="quem-somos.html">Quem Somos</a></li>
+        <li class="menu-item dropdown-menu">
+          <span>Projetos</span>
+          <ul class="submenu">
+            <li class="submenu-item"><a href="servicos-e-produtos.html">Serviços e Produtos</a></li>
+            <li class="submenu-item"><a href="rede-delta.html">Rede Delta</a></li>
+            <li class="submenu-item"><a href="cases.html">Cases</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="contato.html">Contato</a></li>
+      </ul>
 
+      <button id="btn-mobile"><img src="img/icon-menu.svg" alt="Ícone de menu"></button>
+      <ul class="menu-mobile">
+        <li id="mobile-item-ativo" class="menu-mobile-item"><a href="index.html">Home</a></li>
+        <li class="menu-mobile-item"><a href="quem-somos.html">Quem Somos</a></li>
+        <li class="menu-mobile-item"><a href="servicos-e-produtos.html">Serviços e Produtos</a></li>
+        <li class="menu-mobile-item"><a href="rede-delta.html">Rede Delta</a></li>
+        <li class="menu-mobile-item"><a href="cases.html">Cases</a></li>
+        <li class="menu-mobile-item menu-contato"><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="historia">
+      <p class="paragrafo-home">
+        A Delta <abbr title="Júnior">Jr</abbr>, <b>primeira</b> empresa júnior de Licenciatura em Matemática do Brasil, fundada em 2018,
+        é uma associação sem fins lucrativos que busca oferecer <b>serviços em Educação Matemática</b>
+        para estudantes, familiares, educadores, plataformas, editoras e instituições de ensino.
+      </p>
+    </section>
+    <section class="por-que-nos-contratar">
+      <h2 class="titulo-secao">Por que nos contratar?</h2>
+
+      <section class="container flex">
+        <div class="item"><img src="img/busca-por-mudança.png" alt="lâmpada com contornos pretos e três traços pretos em cada lado acendendo em um fundo redondo azulado">
+          <p>Busca por mudança</p>
+        </div>
+        <div class="item"><img src="img/equipe-jovem.png" alt="foguete com contornos pretos e três traços pretos em cada lado em um fundo redondo azulado">
+          <p>Equipe jovem</p>
+        </div>
+        <div class="item"><img src="img/preço-acessivel.png" alt="saco com um cifrão estampado nele ao lado de uma coluna de três moedas em um fundo redondo azulado">
+          <p>Preços acessíveis</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="parceria-unicamp">
+      <div class="titulo-img-parceria-unicamp">
+        <img class="img-parceria-unicamp img-parceria-unicamp-mobile" src="img/icones/unicamp.svg" alt="Desenho de um capelo (chapéu de formatura) na cor cinza">
+        <h2 class="titulo-parceria-unicamp">Parceria Unicamp</h2>
+      </div>
+      <div class="paragrafo">
+        <p class="desc-parceria-unicamp borda-desc-parceria-unicamp">Contamos com o suporte do corpo docente do Instituto de Matemática da Unicamp (IMECC) para a validação e execução de nossos projetos.</p>
+      </div>
+    </section>
+
+    <section id="rede-delta">
+      <h2 class="titulo-secao">Rede Delta</h2>
+      <p class="txt-rede-delta">Está precisando de aulas particulares de matemática ou está procurando alunos que se interessem pelas suas aulas? Conheça a Rede Delta, composta por alunos da licenciatura em matemática da UNICAMP.</p>
+      <button class="btn-padrao borda" onclick="window.location.href='rede-delta.html'" style="cursor: pointer;">Quero conhecer</button>
+    </section>
+    <section class="nossos-cases">
+      <h2 class="titulo-secao">Nossos Cases</h2>
+      <div class="nossos-cases-container">
+        <div class="case-elemento">
+          <div class="nossos-case-elemento">
+            <p>Editoração de Questões</p>
+            <img src="img/icones/editoracao.svg" alt="ícone imagem editoração">
+          </div>
+          <div class="nossos-case-elemento">
+            <p>Matematrik</p>
+            <img src="img/icones/matematrick.svg" alt="ícone da imagem matematrik">
+          </div>
+        </div>
+        <div class="case-elemento">
+          <div class="nossos-case-elemento">
+            <p>E-aulas</p>
+            <img src="img/icones/e-aulas.svg" alt="ícone de imagem aula">
+          </div>
+          <div class="nossos-case-elemento">
+            <p>Assessoria na Olímpiada de Matemática da Unicamp [OMU]</p>
+            <img src="img/icones/logo_omu_branco.svg" alt="ícone da imagem omu">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="logo-footer">
+      <img src="img/icones/logo_branca_rodape.png" alt="Logo branco da Delta Jr">
+    </div>
+    <div class="redes">
+      <p>Nossas redes</p>
+      <a href="https://www.instagram.com/delta__junior/" target="_blank"><img src="img/icones/instagram.png" alt="ícone amarelo instagram"></a>
+      <a href="https://www.linkedin.com/company/deltajr/" target="_blank"><img src="img/icones/linkedin.png" alt="ícone amarelo linkedin"></a>
+      <p>@Copyright 2021</p>
+      <span><a href="https://www.beetsjr.com.br" target="_blank">Desenvolvido por Beets Jr</a></span>
+    </div>
+    <div class="info">
+      <div class="container-menor">
+        <div><img src="img/icones/carta.png" alt="ícone de carta"></div>
+        <div>
+          <p>deltajr@unicamp.br</p>
+        </div>
+      </div>
+      <div class="container-maior">
+        <div><img src="img/icones/pin.png" alt="ícone localização"></div>
+        <div>
+          <p>Rua Sérgio Buarque de Holanda, 651 -<br>Cidade Universtária, Campinas/SP</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
