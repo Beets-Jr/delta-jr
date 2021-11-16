@@ -110,20 +110,10 @@ function filtrar(event) {
   })
 
   // caso nenhum professor seja exibido com as esolhas de filtros feitas, insere um parágrafo com mensagem específica
+  p = document.getElementById("filtro-sem-resultados")
   if (professoresExibidos === 0) {
-    const paragrafo = document.createElement("p")
-    paragrafo.setAttribute("id", "filtro-sem-resultados")
-    const node = document.createTextNode("Nenhum(a) professor(a) encontrado(a)")
-    paragrafo.appendChild(node)
-
-    const div = document.getElementById("filtro")
-    div.appendChild(paragrafo)
-  } else {
-    p = document.getElementById("filtro-sem-resultados")
-    if (p) {
-      p.remove()
-    }
-  }
+    p.style.display = "block"
+  } 
 }
 
 // Implementação do Collapsible (lista oculta ou toggle list)
@@ -166,9 +156,7 @@ reset.addEventListener("click", () => {
 
   // ao se limpar os filtros, é preciso remover o parágrafo de frase específica, caso ele estiver sendo mostrado
   p = document.getElementById("filtro-sem-resultados")
-  if (p) {
-    p.remove()
-  }
+  p.style.display = "none"
 })
 
 // Definição do slider de preço da aula para seu valor máximo quando a página é recarregada
