@@ -255,6 +255,11 @@ select {
   text-transform: uppercase;
 }
 
+.professor {
+	opacity: 1;
+	transition: opacity .5s linear;
+}
+
 .img-nossos-professores {
   border-radius: 150px;
   max-width: 250px;

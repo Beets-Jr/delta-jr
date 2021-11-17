@@ -115,10 +115,12 @@ function filtrar(event) {
       flagDisponivel &&
       precoDesejado
     ) {
-      professor.classList.remove("hide")
+      professor.style.opacity = "1"
+      setTimeout(() => professor.classList.remove("hide"), 500)
       professoresExibidos++
     } else {
-      professor.classList.add("hide")
+      professor.style.opacity = "0"
+      setTimeout(() => professor.classList.add("hide"), 500)
     }
   })
 
@@ -126,7 +128,9 @@ function filtrar(event) {
   p = document.getElementById("filtro-sem-resultados")
   if (professoresExibidos === 0) {
     p.style.display = "block"
-  } 
+  } else {
+    p.style.display = "none"
+  }
 }
 
 // Implementação do Collapsible (lista oculta ou toggle list)
@@ -164,7 +168,8 @@ reset.addEventListener("click", () => {
   slider.value = PRECO_MAX.toString()
   output.innerHTML = slider.value;
   professores.forEach((professor) => {
-      professor.classList.remove("hide")
+    professor.classList.remove("hide")
+    setTimeout(() => professor.style.opacity = "1", 1)
   })
 
   // ao se limpar os filtros, é preciso remover o parágrafo de frase específica, caso ele estiver sendo mostrado
