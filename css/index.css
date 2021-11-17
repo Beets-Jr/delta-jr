@@ -36,6 +36,7 @@
     width: 200px;
     height: auto;
     align-self: center;
+    margin-bottom: 10px;
 }
 
 .nossos-case-elemento p {
@@ -45,7 +46,12 @@
     font-weight: bold;
     margin-bottom: auto;
     margin-top: auto;
-    margin-top: 1.5rem;
+    
+}
+
+#e-aulas-img {
+    width: 230px;
+    height: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -60,6 +66,10 @@
 
     .nossos-case-elemento img {
         width: 150px;
+    }
+
+    #e-aulas-img {
+        width: 180px;
     }
 }
 
