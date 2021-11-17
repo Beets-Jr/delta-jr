@@ -1,6 +1,17 @@
 // Constante do preço máximo da aula cobrado pelos professores
 const PRECO_MAX = 300
 
+// Função que ordena a lista de professores em ordem alfabética:
+function sortList(ul) {
+  var ul = document.getElementById("lista-professores");
+
+  Array.from(ul.getElementsByClassName("professor"))
+    .sort((a, b) => a.textContent.localeCompare(b.textContent))
+    .forEach(li => ul.appendChild(li));
+}
+
+sortList("lista-professores");
+
 // Filtro
 // armazenamento das escolhas de filtro pelo usuário
 const busca = document.getElementById("busca")
@@ -34,6 +45,8 @@ function filtrar(event) {
   professores.forEach((professor) => {
     let nomeProfessor = professor.dataset.nome.toLowerCase()
     let diasDisponiveisString = professor.dataset.dias.toLowerCase()
+    let periodoDisponivelString = professor.dataset.horario.toLowerCase()
+    let publicoAlvo = professor.dataset.publico.toLowerCase()
     let flagDisponivel = false        // flag que indica se o professor está disponível em pelo menos um dos dias marcados nos checkboxes
 
     // caso algum dia da semana tenha sido marcado: (se não houver nenhum, não é necessário fazer toda a verificação)
@@ -97,8 +110,8 @@ function filtrar(event) {
     if (
       nomeProfessor.includes(pesquisa) &&
       (professor.dataset.semestre === semestre || semestre === "") &&
-      (professor.dataset.horario === periodo || periodo === "") &&
-      (professor.dataset.publico === publico || publico === "") &&
+      (periodoDisponivelString === "" || periodoDisponivelString.includes(periodo) || periodo === "") &&
+      (publicoAlvo === "" || publicoAlvo.includes(publico) || publico === "") &&
       flagDisponivel &&
       precoDesejado
     ) {
