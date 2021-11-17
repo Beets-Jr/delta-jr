@@ -46,25 +46,25 @@
 }
 
 .primeiro-banner {
-  background-image: url("img/banner-home5-azul.jpg");
+  background-image: url("../img/banner-home5-azul.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .segundo-banner {
-  background-image: url("img/banner-home1-azul.jpg");
+  background-image: url("../img/banner-home1-azul.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .terceiro-banner {
-  background-image: url("img/banner-home3-azul.jpg");
+  background-image: url("../img/banner-home3-azul.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .quarto-banner {
-  background-image: url("img/banner-home4-azul.jpg");
+  background-image: url("../img/banner-home4-azul.jpg");
   background-size: cover;
   background-position: center;
 }
