@@ -1,70 +1,84 @@
+/*Banner-home*/
 .banner-container div {
   height: 360px;
-  color: white;
+  color: var(--h2-escuro);
   text-align: center;
 }
 
 .primeiro-banner h1 {
   font-family: var(--h1-fonte);
   font-size: var(--h1-tamanho);
+  padding-top: 45px;
+  color: white;
 }
 
 .segundo-banner h2 {
   font-family: var(--h2-fonte);
   font-size: var(--h2-tamanho);
+  padding-top: 45px;
 }
 
 .terceiro-banner h2 {
   font-family: var(--h2-fonte);
   font-size: var(--h2-tamanho);
+  margin-top: 45px;
 }
 
 .quarto-banner h2 {
   font-family: var(--h2-fonte);
   font-size: var(--h2-tamanho);
+  margin-top: 45px;
 }
 
 .primeiro-banner p {
   font-family: var(--subtitulo-banner-fonte);
   font-size: var(--subtitulo-banner-tamanho);
   padding-bottom: 10px;
+  padding-top: 25px;
+  color: white;
 }
 
 .segundo-banner p {
   font-family: var(--subtitulo-banner-fonte);
   font-size: var(--subtitulo-banner-tamanho);
+  margin-bottom: 30px;
+  padding-top: 25px;
 }
 
 .terceiro-banner p {
   font-family: var(--subtitulo-banner-fonte);
   font-size: var(--subtitulo-banner-tamanho);
+  margin-bottom: 30px;
+  padding-top: 25px;
 }
 
 .quarto-banner p {
   font-family: var(--subtitulo-banner-fonte);
   font-size: var(--subtitulo-banner-tamanho);
+  margin-bottom: 30px;
+  padding-top: 25px;
 }
 
 .primeiro-banner {
-  background-image: url("../img/banner-home5-azul.jpg");
+  background-image: url("../img/banner-home5-azul\ 1.png");
   background-size: cover;
   background-position: center;
 }
 
 .segundo-banner {
-  background-image: url("../img/banner-home1-azul.jpg");
+  background-image: url("../img/banner-home1-azul\ 1.png");
   background-size: cover;
   background-position: center;
 }
 
 .terceiro-banner {
-  background-image: url("../img/banner-home3-azul.jpg");
+  background-image: url("../img/banner-home3-azul\ 1.png");
   background-size: cover;
   background-position: center;
 }
 
 .quarto-banner {
-  background-image: url("../img/banner-home4-azul.jpg");
+  background-image: url("../img/banner-home4-azul\ 1.png");
   background-size: cover;
   background-position: center;
 }
@@ -112,4 +126,22 @@
   .quarto-banner button {
     margin-top: 0px;
   }
+}
+
+/*Dots*/
+.slick-dots {
+  /* position: absolute; */
+  position: static !important;
+  margin-top: -50px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 15px !important;
+  width: 20px !important;
+  height: 20px !important;
+  color: #84b5be !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fcd108 !important;
 }
