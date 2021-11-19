@@ -74,7 +74,7 @@
   --descricao-rede-delta-home: #cfab00;
   --descricao-cases: #161571;
   --aluno-ou-professor: #161571;
-  --fundo-azul-home: #D7EDF1;
+  --fundo-azul-home: #d7edf1;
 }
 
 /*tablet*/
@@ -125,7 +125,7 @@
     --aluno-ou-professor-tamanho: 1.4rem;
   }
 }
-  
+
 /* Botão Geral */
 /* Para a classe do botão geral é necessário usar uma outra classe junta, a classe borda.
     Exemplo: <button class="btn-padrao borda">Quero conhecer</button>
@@ -134,7 +134,7 @@
   font: var(--botoes-fonte);
   font-size: var(--botoes-tamanho);
   text-transform: uppercase;
-  color: white;
+  color: var(--h2-escuro);
   font-weight: bold;
   /* background-color: var(--enviar); */
   padding: 15px 20px;
@@ -154,7 +154,7 @@
 .borda::before {
   content: "";
   position: absolute;
-  background-color: white;
+  background-color: var(--h2-escuro);
   width: 50%;
   height: 4px;
   top: 0;
@@ -165,7 +165,7 @@
 .borda::after {
   content: "";
   position: absolute;
-  background-color: white;
+  background-color: var(--h2-escuro);
   width: 50%;
   height: 4px;
   bottom: 0;
