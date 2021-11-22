@@ -1,88 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>Delta Jr.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Delta Jr</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/index.css" rel="stylesheet" type="text/css" />
+  <!--<link href="slick/slick.css" rel="stylesheet" type="text/css" />
+  <link href="slick/slick-theme.css" rel="stylesheet" type="text/css"/>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
 </head>
 
 <body>
-  <main>
-    <section class="historia">
-      <p class="paragrafo-home">
-        A Delta <abbr title="Júnior">Jr</abbr>, <b>primeira</b> empresa júnior de Licenciatura em Matemática do Brasil, fundada em 2018,
-        é uma associação sem fins lucrativos que busca oferecer <b>serviços em Educação Matemática</b>
-        para estudantes, familiares, educadores, plataformas, editoras e instituições de ensino.
-      </p>
-    </section>
-
-    <section class="por-que-nos-contratar">
-      <h2 class="titulo-secao">Por que nos contratar?</h2>
-
-      <section class="container flex">
-        <div class="item"><img src="img/busca-por-mudança.png" alt="lâmpada com contornos pretos e três traços pretos em cada lado acendendo em um fundo redondo azulado">
-          <p>Busca por mudança</p>
-        </div>
-        <div class="item"><img src="img/equipe-jovem.png" alt="foguete com contornos pretos e três traços pretos em cada lado em um fundo redondo azulado">
-          <p>Equipe jovem</p>
-        </div>
-        <div class="item"><img src="img/preço-acessivel.png" alt="saco com um cifrão estampado nele ao lado de uma coluna de três moedas em um fundo redondo azulado">
-          <p>Preços acessíveis</p>
-        </div>
-      </section>
-    </section>
-
-    <section class="parceria-unicamp">
-      <div class="titulo-img-parceria-unicamp">
-        <img class="img-parceria-unicamp img-parceria-unicamp-mobile" src="img/unicamp.svg" alt="Desenho de um capelo (chapéu de formatura) na cor cinza">
-        <h2 class="titulo-parceria-unicamp">Parceria Unicamp</h2>
-      </div>
-      <div class="paragrafo">
-        <p class="desc-parceria-unicamp borda-desc-parceria-unicamp">Contamos com o suporte do corpo docente do Instituto de Matemática da Unicamp (IMECC) para a validação e execução de nossos projetos.</p>
-      </div>
-    </section>
-
-    <section id="rede-delta">
-      <h2 class="titulo-secao">Rede Delta</h2>
-      <p class="txt-rede-delta">Está precisando de aulas particulares de matemática ou está procurando alunos que se interessem pelas suas aulas? Conheça a Rede Delta, composta por alunos da licenciatura em matemática da UNICAMP.</p>
-      <button class="btn-padrao borda" onclick="window.location.href='rede-delta.html'" style="cursor: pointer;">Quero conhecer</button>
-    </section>
-
-
-    <section class="nossos-cases">
-      <h2 class="titulo-secao">Nossos Cases</h2>
-      <div class="nossos-cases-container">
-        <div class="case-elemento">
-          <div class="nossos-case-elemento">
-            <p>Editoração de Questões</p>
-            <img src="img/editoração.jpg" alt="ícone imagem editoração">
-          </div>
-          <div class="nossos-case-elemento">
-            <p>Matematrik</p>
-            <img src="img/matematrick.jpg" alt="ícone da imagem matematrik">
-          </div>
-        </div>
-        <div class="case-elemento">
-          <div class="nossos-case-elemento">
-            <p>E-aulas</p>
-            <img src="img/e-aulas2 (1).jpg" alt="ícone de imagem aula">
-          </div>
-          <div class="nossos-case-elemento">
-            <p>Assessoria na Olímpiada de Matemática da Unicamp [OMU]</p>
-            <img src="img/logo_omu_branco.jpg" alt="ícone da imagem omu">
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section class="banner-container home-banner">
+    <div class="primeiro-banner">
+      <h1>Delta Jr</h1>
+      <p>Soluções reais para problemas complexos</p>
+      <p>A primeira empresa júnior de licenciatura em matemática do Brasil</p>
+    </div>
+    <div class="segundo-banner">
+      <h2>Editoração e revisão de questões</h2>
+      <p>Desde os anos finais até o ensino superior</p>
+      <a href="cases.html"><button class="btn-padrao borda">Quero conhecer</button></a>
+    </div>
+    <div class="terceiro-banner">
+      <h2>Matemática na escola</h2>
+      <p>Apresentações lúdicas sobre matemática, incluindo o Matematrick, o show de mágica com fundamentos matemáticos.</p>
+      <a href="cases.html"><button class="btn-padrao borda">Quero conhecer</button></a>
+    </div>
+    <div class="quarto-banner">
+      <h2>Assessoria em eventos</h2>
+      <p>Prestamos auxílio em eventos, oficinas e cursos de matemática, desde aspectos técnicos até a própria produção de conteúdo.</p>
+      <a href="cases.html"><button class="btn-padrao borda">Quero conhecer</button></a>
+    </div>
+  </section>
+  <!---<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+--->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
