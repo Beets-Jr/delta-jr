@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="js/filtro-prof.js" defer></script>
 	<title>Delta Jr.</title>
 </head>
 <body>
@@ -37,62 +39,441 @@
             <button class="btn-padrao borda" type="button" rel="nofollow" onclick="window.location.href='https://forms.gle/k9dH4QHMWB6vvSP37'" style="cursor: pointer;">Clique aqui</button>
         </div>
     </section>
+
     <section class="nossos-professores">
         <h2>Nossos Professores</h2>
-        <div class="infos-nossos-professores">
-            <img class="img-nossos-professores" src="img/circulo-300.png" alt="Circulo">
-            <div>
-                <ul>
-                    <li>Nome</li>
-                    <li>Semestre que está no curso</li>
-                    <li>Dias da semana disponíveis e horários</li>
-                    <li>Dá aula para:</li>
-                    <li>Faixa de preço:</li>
-                    <li>Descrição/Bio:</li>
-                    <li>Comentários:</li>
-                </ul>
-                <div class="estrelas">
-                    <input type="radio" id="cm_star-empty" name="fb" value=""/>
-                    <label for="cm_star-1"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
-                    <label for="cm_star-2"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
-                    <label for="cm_star-3"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
-                    <label for="cm_star-4"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
-                    <label for="cm_star-5"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+        <div class="barra-busca" id="filtro">
+            <button type="button" class="collapsible">filtros</button>
+            <form class="content" onsubmit="filtrar(event)">
+                <label>Nome:</label>
+                <input id="busca" type="text" placeholder="Buscar pelo nome" autocomplete="off"/>
+
+                <label>Semestre:</label>
+                <input id="semestre" type="number" min="1" max="9" autocomplete="off"/>
+
+                <label>Dia da semana:</label>
+                <div class="dias-semana">
+                    <div class="dia">
+                        <input class="dia-check" type="checkbox" autocomplete="off">
+                        <label for="scales">domingo</label>
+                    </div>
+                    
+                    <div class="dia">
+                        <input class="dia-check" type="checkbox" autocomplete="off">
+                        <label for="scales">segunda</label>
+                    </div>
+
+                    <div class="dia">
+                        <input class="dia-check" type="checkbox" autocomplete="off">
+                        <label for="scales">terça</label>
+                    </div>
+                    
+                    <div class="dia">
+                        <input class="dia-check" type="checkbox" autocomplete="off">
+                        <label for="scales">quarta</label>
+                    </div>
+
+                    <div class="dia">
+                        <input class="dia-check" type="checkbox" autocomplete="off">
+                        <label for="scales">quinta</label>
+                    </div>
+                    
+                    <div class="dia">
+                        <input class="dia-check" type="checkbox" autocomplete="off">
+                        <label for="scales">sexta</label>
+                    </div>
+
+                    <div class="dia">
+                        <input class="dia-check" type="checkbox" autocomplete="off">
+                        <label for="scales">sábado</label>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="infos-nossos-professores">
-            <img class="img-nossos-professores" src="img/circulo-300.png" alt="Circulo">
-            <div>
-                <ul>
-                    <li>Nome</li>
-                    <li>Semestre que está no curso</li>
-                    <li>Dias da semana disponíveis e horários</li>
-                    <li>Dá aula para:</li>
-                    <li>Faixa de preço:</li>
-                    <li>Descrição/Bio:</li>
-                    <li>Comentários:</li>
-                </ul>
-                <div class="estrelas">
-                    <input type="radio" id="cm_star-empty" name="fb" value=""/>
-                    <label for="cm_star-1"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
-                    <label for="cm_star-2"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
-                    <label for="cm_star-3"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
-                    <label for="cm_star-4"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
-                    <label for="cm_star-5"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                
+
+                <label>Período do dia:</label>
+                <select id="periodo-dia">
+                    <option value="" selected>Todos os períodos</option>
+                    <option value="manha">manhã</option>
+                    <option value="tarde">tarde</option>
+                    <option value="noite">noite</option>
+                </select>
+
+                <label>Dá aulas para:</label>
+                <select id="publico-aula">
+                    <option value="" selected>Todos os públicos</option>
+                    <option value="fundamental1">Fundamental 1</option>
+                    <option value="fundamental2">Fundamental 2</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="cursinho">Cursinho</option>
+                    <option value="superior">Ensino Superior</option>
+                </select>
+
+                <label>Valor máximo: R$<span id="demo"></span></label>
+                <input type="range" min="10" max="300" value="300" class="slider" id="preco" step="10">  
+                
+                <div class="botoes-forms-filtro">
+                    <button type="reset" id="reset-button">Limpar filtros</button>
+                    <button type="submit">Aplicar filtros</button>
                 </div>
-            </div>
+                <p id="filtro-sem-resultados">Nenhum(a) professor(a) encontrado(a)</p>
+            </form>
         </div>
+
+        <ul id="lista-professores">
+            <li class="professor" data-nome="Eduardo Lacerda Oliveira" data-semestre="" data-dias="domingo terça quinta sexta sábado" data-horario="tarde noite" data-publico="" data-precomin="45" data-precomax="60" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="./img/professores-rede-delta/eduardo_lacerda.jpg" alt="Imagem do professor Eduardo: um homem branco, de olhos verdes claros, barba e cabelo curto castanhos. Está usando um óculos de grau metálico e uma camseta azul.">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">eduardo lacerda oliveira</li>
+                            <li>domingo, terça, quinta, sexta e sábado</li>
+                            <li>tarde e noite</li>
+                            <li>todos os públicos</li>
+                            <li>de R$45 a R$60</li>
+                            <li>
+                                Moro em Campinas e sou licenciado em matemática pela Unicamp. Gosto de ir à academia, jogar jogos e estar com minha namorada.
+                                Também gosto de filmes e séries de super-heróis (Marvel > DC). 
+                                Torço para o Guarani e costumava frequentar o estádio com frequência.
+                                Trabalho em três escolas estaduais de Campinas e, apesar de continuar gostando de lecionar matemática, me sinto muito frustrado com a estrutura das escolas, com o nível dos alunos e, principalmente, com a baixa remuneração
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="professor" data-nome="Daniela Ferrari de Oliveira" data-semestre="" data-dias="domingo segunda terça sábado" data-horario="tarde" data-publico="fundamental1 fundamental2 medio cursinho" data-precomin="25" data-precomax="" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="img/circulo-300.png" alt="Circulo">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">daniela ferrari de oliveira</li>
+                            <li>?° semestre</li>
+                            <li>domingo, segunda, terça e sábado</li>
+                            <li>à tarde</li>
+                            <li>fundamental 1 e 2, médio e cursinho</li>
+                            <li>cerca de R$ 25</li>
+                            <li>
+                                minha descrição, com uma breve explicação sobre quem eu sou, o que eu gosto de fazer...
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="professor" data-nome="Bruno Yuji Kobaiashi Marques" data-semestre="" data-dias="segunda quarta quinta sexta sábado" data-horario="manha tarde" data-publico="" data-precomin="40" data-precomax="" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="img/circulo-300.png" alt="Circulo">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">bruno yuji kobaiashi marques</li>
+                            <li>?° semestre</li>
+                            <li>segunda, quarta, quinta, sexta e sábado</li>
+                            <li>manhã e tarde</li>
+                            <li>todos os públicos</li>
+                            <li>cerca de R$ 40</li>
+                            <li>
+                                minha descrição, com uma breve explicação sobre quem eu sou, o que eu gosto de fazer...
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="professor" data-nome="Lara Vitória Gonçalves Queiroz" data-semestre="" data-dias="domingo segunda terça quarta quinta sexta sábado" data-horario="tarde noite" data-publico="fundamental1 fundamental2 medio cursinho" data-precomin="35" data-precomax="45" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="./img/professores-rede-delta/lara_queiroz.jpg" alt="Imagem da professora Lara: mulher de olhos pretos e cabelos cacheados pretos, sorridente e usando camiseta preta.">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">lara vitória gonçalves queiroz</li>
+                            <li>?° semestre</li>
+                            <li>todos os dias</li>
+                            <li>tarde e noite</li>
+                            <li>fundamental 1 e 2, médio e cursinho</li>
+                            <li>de R$35 a R$45</li>
+                            <li>
+                                Sou de Guarulhos mas muito em breve estarei em Campinas. Amo música e tocar instrumentos, principalmente com meus amigos. Também gosto muito de esporte, seja ele qual for!
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="professor" data-nome="Douglas dos Santos Mariano da Silva" data-semestre="" data-dias="domingo segunda terça quarta quinta sexta sábado" data-horario="manha tarde" data-publico="" data-precomin="40" data-precomax="45" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="./img/circulo-300.png" alt="Circulo">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">douglas dos santos mariano da silva</li>
+                            <li>?° semestre</li>
+                            <li>todos os dias</li>
+                            <li>manhã e tarde</li>
+                            <li>todos os públicos</li>
+                            <li>de R$40 a R$45</li>
+                            <li>
+                                minha descrição, com uma breve explicação sobre quem eu sou, o que eu gosto de fazer...
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="professor" data-nome="marcos murguel" data-semestre="" data-dias="domingo segunda terça quarta quinta sexta sábado" data-horario="" data-publico="" data-precomin="35" data-precomax="" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="./img/circulo-300.png" alt="Circulo">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">marcos murguel</li>
+                            <li>?° semestre</li>
+                            <li>todos os dias</li>
+                            <li>todos os períodos</li>
+                            <li>todos os públicos</li>
+                            <li>cerca de R$35</li>
+                            <li>
+                                minha descrição, com uma breve explicação sobre quem eu sou, o que eu gosto de fazer...
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="professor" data-nome="gustavo alexandre claudino da silva" data-semestre="" data-dias="domingo segunda terça quarta quinta sexta sábado" data-horario="" data-publico="fundamental1 fundamental2 medio cursinho" data-precomin="30" data-precomax="40" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="./img/circulo-300.png" alt="Circulo">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">gustavo alexandre claudino da silva</li>
+                            <li>?° semestre</li>
+                            <li>todos os dias</li>
+                            <li>todos os períodos</li>
+                            <li>fundamental 1 e 2, médio e cursinho</li>
+                            <li>de R$30 a R$40</li>
+                            <li>
+                                minha descrição, com uma breve explicação sobre quem eu sou, o que eu gosto de fazer...
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="professor" data-nome="vinícius dos santos andrade" data-semestre="" data-dias="domingo terça quarta quinta sábado" data-horario="" data-publico="fundamental2 medio cursinho" data-precomin="25" data-precomax="45" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="./img/professores-rede-delta/vinicius_santos.jpg" alt="Imagem do professor Vinícius: homem de cabelo curto preto, sorridente e vestindo camiseta branca.">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">vinícius dos santos andrade</li>
+                            <li>?° semestre</li>
+                            <li>domingo, terça, quarta, quinta e sábado</li>
+                            <li>todos os períodos</li>
+                            <li>fundamental 2, médio e cursinho</li>
+                            <li>de R$25 a R$45</li>
+                            <li>
+                                sou muito agitado e curto organização. No tempo livre estou na academia, andando de bicicleta, tirando fotos, tocando violão, assistindo séries ou dormindo
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="professor" data-nome="stephany alves" data-semestre="" data-dias="quarta quinta sexta sábado" data-horario="manha tarde" data-publico="fundamental1 fundamental2 medio cursinho" data-precomin="30" data-precomax="50" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="./img/circulo-300.png" alt="Circulo">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">stephany alves</li>
+                            <li>?° semestre</li>
+                            <li>quarta, quinta, sexta e sábado</li>
+                            <li>manhã e tarde</li>
+                            <li>fundamental 1 e 2, médio e cursinho</li>
+                            <li>de R$30 a R$50</li>
+                            <li>
+                                minha descrição, com uma breve explicação sobre quem eu sou, o que eu gosto de fazer...
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="professor" data-nome="bruno triboni" data-semestre="" data-dias="segunda terça quarta quinta sexta sábado" data-horario="manha tarde" data-publico="fundamental2 medio cursinho" data-precomin="50" data-precomax="" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="./img/circulo-300.png" alt="Circulo">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">bruno triboni</li>
+                            <li>?° semestre</li>
+                            <li>segunda, terça, quarta, quinta, sexta e sábado</li>
+                            <li>manhã e tarde</li>
+                            <li>fundamental 2, médio e cursinho</li>
+                            <li>cerca de R$50</li>
+                            <li>
+                                minha descrição, com uma breve explicação sobre quem eu sou, o que eu gosto de fazer...
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="professor" data-nome="clara lovate" data-semestre="" data-dias="segunda terça quarta quinta sexta" data-horario="manha tarde" data-publico="" data-precomin="80" data-precomax="120" data-estrelas="">
+                <div class="infos-nossos-professores">
+                    <img class="img-nossos-professores" src="./img/circulo-300.png" alt="Circulo">
+                    <div>
+                        <ul>
+                            <li class="prof-nome">clara lovate</li>
+                            <li>?° semestre</li>
+                            <li>segunda, terça, quarta, quinta e sexta</li>
+                            <li>manhã e tarde</li>
+                            <li>todos os públicos</li>
+                            <li>de R$80 a R$120</li>
+                            <li>
+                                minha descrição, com uma breve explicação sobre quem eu sou, o que eu gosto de fazer...
+                            </li>
+                        </ul>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value=""/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </section>
 </body>
 </html>

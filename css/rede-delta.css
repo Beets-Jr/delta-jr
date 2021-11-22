@@ -8,7 +8,7 @@
   width: 100%;
   height: 300px;
   background: url("/img/logo-preenchimento-peq.png") no-repeat center,
-  linear-gradient(to bottom, #d7edf1, #ffffff);
+    linear-gradient(to bottom, #d7edf1, #ffffff);
   padding-top: 10px;
 }
 
@@ -41,37 +41,37 @@
 
 /* INSCRIÇÃO ALUNOS E PROFESSORES */
 .rede-delta-alunos-prof {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 60px 0 60px 0;
-    margin: 0 auto;
-    max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0 60px 0;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .alunos-prof-item {
-    flex: 1 1 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .alunos-prof-item p {
-    text-align: center;
-    color: var(--aluno-ou-professor);
-    font-family: var(--aluno-ou-professor-fonte);
-    font-weight: bold;
-    font-size: var(--aluno-ou-professor-tamanho);
+  text-align: center;
+  color: var(--aluno-ou-professor);
+  font-family: var(--aluno-ou-professor-fonte);
+  font-weight: bold;
+  font-size: var(--aluno-ou-professor-tamanho);
 }
 
 .alunos-prof-item img {
-    max-width: 100%;
-    width: 120px;
-    height: auto;
+  max-width: 100%;
+  width: 120px;
+  height: auto;
 }
 
 .alunos-prof-item-desc {
-    height: 130px;
-    margin: 40px 85px 0 85px;
+  height: 130px;
+  margin: 40px 85px 0 85px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -82,128 +82,268 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .alunos-prof-item {
-        flex-basis: 100%;
-    }
+  .alunos-prof-item {
+    flex-basis: 100%;
+  }
 
-    .alunos-prof-item-desc {
-        height: auto;
-        margin: 40px 30px 40px 30px;
-    }
+  .alunos-prof-item-desc {
+    height: auto;
+    margin: 40px 30px 40px 30px;
+  }
 
-    .rede-delta-alunos-prof {
-        gap: 80px;
-    }
-    
-    .alunos-prof-item p {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+  .rede-delta-alunos-prof {
+    gap: 80px;
+  }
+
+  .alunos-prof-item p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 /* Nossos professores */
 .infos-nossos-professores {
-   display: flex;
-   justify-content: space-evenly;
-   margin: 150px auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 150px 10% 150px 10%;
+  gap: 10%;
 }
 
 .nossos-professores h2 {
-   color: var(--h2-escuro);
-   font-size: var(--h2-tamanho);
-   font-family: var(--h2-fonte);
-   text-align: center;
-   margin: 100px 0;
+  color: var(--h2-escuro);
+  font-size: var(--h2-tamanho);
+  font-family: var(--h2-fonte);
+  text-align: center;
+  margin: 100px 0 20px 0;
 }
 
-.nossos-professores ul li {
-   color: var(--aluno-ou-professor);
-   font-size: var(--aluno-ou-professor-tamanho);
-   font-family: var(--aluno-ou-professor-fonte);
-   font-weight: bold;
-   margin: .3em 0;
-   text-transform: uppercase;
+.barra-busca {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
-.img-nossos-professores {
-   border-radius: 150px;
-   max-width: 250px;
-   max-height: 250px;
-   width: auto;
-   height: auto;
+.barra-busca p {
+  margin: 0 auto;
+  font-size: var(--descricao-padrao-tamanho);
+  font-family: var(--descricao-padrao-fonte);
+  color: var(--descricao-padrao);
+  padding: 50px 0 100px 0;
 }
 
-.estrelas {
-   text-align: center;
-   margin-top: 60px;
+.collapsible {
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #055d7c;
+  font-family: var(--botoes-fonte);
+  font-size: var(--botoes-tamanho);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
-.estrelas input[type=radio] {
+@media only screen and (max-width: 480px) {
+  .collapsible {
+    padding: 5px;
+  }
+}
+
+.collapsible:hover {
+  background-color: #161571;
+  transition: 0.5s;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.conten input,
+label {
+  font-family: var(--footer-fonte);
+  font-size: var(--footer-tamanho);
+}
+
+.barra-busca input,
+select {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: white;
+  color: #393939;
+}
+
+.barra-busca .dias-semana {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 95%;
+  height: 8px;
+  border-radius: 5px;
+  background: #d3d3d3 !important;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: #055d7c;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: #055d7c;
+  cursor: pointer;
+}
+
+.barra-busca input:focus-visible {
+  outline: none;
+}
+
+.botoes-forms-filtro {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.botoes-forms-filtro button {
+  padding: 8px;
+  background-color: var(--h4-chamada-servicos);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-family: var(--botoes-fonte);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#filtro-sem-resultados {
   display: none;
 }
 
-.estrelas label i.fa{
+.nossos-professores ul li {
+  color: var(--aluno-ou-professor);
+  font-size: var(--aluno-ou-professor-tamanho);
+  font-family: var(--aluno-ou-professor-fonte);
+  font-weight: bold;
+  margin: 0.3em 0;
+  text-transform: uppercase;
+}
+
+.professor {
+	opacity: 1;
+	transition: opacity .5s linear;
+}
+
+.img-nossos-professores {
+  border-radius: 150px;
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
+
+.estrelas {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.estrelas input[type="radio"] {
+  display: none;
+}
+
+.estrelas label i.fa {
   font-size: 2.5em;
   margin: 0 15px;
 }
 
 .estrelas label i.fa::before {
-  content:'\f005';
-  color: #FC0;
+  content: "\f005";
+  color: #fc0;
   font-weight: 100;
   font-size: 35px;
 }
 
 /* Nossos professores tablet */
 @media screen and (max-width: 768px) {
-   .infos-nossos-professores {
-      margin: 70px auto;
-   }
+  .infos-nossos-professores {
+    margin: 70px auto;
+  }
 
-   .img-nossos-professores {
-      max-width: 160px;
-      max-height: 160px;
-   }
+  .img-nossos-professores {
+    max-width: 160px;
+    max-height: 160px;
+  }
 
-   .estrelas {
-      margin-top: 40px;
-   }
+  .estrelas {
+    margin-top: 40px;
+  }
 
-   .estrelas label i.fa{
-      font-size: 2.5em;
-      margin: 0 10px;
-   }
+  .estrelas label i.fa {
+    font-size: 2.5em;
+    margin: 0 10px;
+  }
 
-   .estrelas label i.fa::before {
-      font-size: 25px;
-   }
+  .estrelas label i.fa::before {
+    font-size: 25px;
+  }
 }
 
 /* Nossos professores mobile */
 @media screen and (max-width: 480px) {
-   .nossos-professores {
-      padding: 15px;
-   }
+  .nossos-professores {
+    padding: 15px;
+  }
 
-   .infos-nossos-professores {
-      flex-direction: column;
-      align-items: center;
-      margin: 40px auto;
-   }
+  .infos-nossos-professores {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+  }
 
-   .img-nossos-professores {
-      margin: 0 auto 10px auto;
-   }
+  .img-nossos-professores {
+    margin: 0 auto 10px auto;
+  }
 
-   .estrelas {
-      margin-top: 10px;
-   }
+  .estrelas {
+    margin-top: 10px;
+  }
 
-   .estrelas label i.fa{
-      font-size: 2.5em;
-      margin: 0 5px;
-   }
+  .estrelas label i.fa {
+    font-size: 2.5em;
+    margin: 0 5px;
+  }
 
-   .estrelas label i.fa::before {
-      font-size: 15px;
-   }
+  .estrelas label i.fa::before {
+    font-size: 15px;
+  }
+}
+
+.hide {
+  display: none;
 }
