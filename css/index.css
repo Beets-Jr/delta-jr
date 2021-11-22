@@ -1,147 +1,326 @@
-/*Banner-home*/
-.banner-container div {
-  height: 360px;
-  color: var(--h2-escuro);
-  text-align: center;
+.nossos-cases {
+    padding: 60px 0 60px 0;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.case-elemento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.nossos-cases-container {
+    display: flex; 
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 30px;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
-.primeiro-banner h1 {
-  font-family: var(--h1-fonte);
-  font-size: var(--h1-tamanho);
-  padding-top: 45px;
-  color: white;
+.nossos-case-elemento {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+       
 }
 
-.segundo-banner h2 {
-  font-family: var(--h2-fonte);
-  font-size: var(--h2-tamanho);
-  padding-top: 45px;
+.nossos-case-elemento img {
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-top: 20px;
 }
 
-.terceiro-banner h2 {
-  font-family: var(--h2-fonte);
-  font-size: var(--h2-tamanho);
-  margin-top: 45px;
+.nossos-case-elemento p {
+   font-family: var(--h3-fonte);
+   font-size: var(--h3-tamanho) ;
+   color: var(--h3);
+   font-weight: bold;
+   margin-bottom: auto;
+   margin-top: auto;
 }
 
-.quarto-banner h2 {
-  font-family: var(--h2-fonte);
-  font-size: var(--h2-tamanho);
-  margin-top: 45px;
+@media only screen and (max-width: 768px) {
+    .nossos-cases-container {
+        gap: 10px;
+    }
+
+    .nossos-case-elemento {
+        width: 35%;
+        margin-bottom: 20px;
+    }
+
+    .nossos-case-elemento img {
+        width: 150px;
+   }
 }
 
-.primeiro-banner p {
-  font-family: var(--subtitulo-banner-fonte);
-  font-size: var(--subtitulo-banner-tamanho);
-  padding-bottom: 10px;
-  padding-top: 25px;
-  color: white;
+@media only screen and (max-width: 480px) {
+    .nossos-case-elemento {
+        flex-basis: 100%;
+    }
+
+    .nossos-cases-container {
+        gap: 20px;
+    }
+
+    .nossos-case-elemento p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
-.segundo-banner p {
-  font-family: var(--subtitulo-banner-fonte);
-  font-size: var(--subtitulo-banner-tamanho);
-  margin-bottom: 30px;
-  padding-top: 25px;
+/* Estilo Geral da página */
+.titulo-secao {
+    font: bold var(--h2-tamanho) var(--h2-fonte), serif;
+    color: var(--h2-escuro);
+    position: relative;
+    text-align: center;
+    margin: var(--h2-tamanho) 0;
 }
 
-.terceiro-banner p {
-  font-family: var(--subtitulo-banner-fonte);
-  font-size: var(--subtitulo-banner-tamanho);
-  margin-bottom: 30px;
-  padding-top: 25px;
+.titulo-secao::after {
+    --largura-linha: 100px;
+    content: '';
+    position: absolute;
+    background-color: var(--linha-titulo-secao-home);
+    width: var(--largura-linha);
+    height: 3px;
+    border-radius: 10px;
+    bottom: -0.5rem;
+    left: calc(50% - (var(--largura-linha) / 2)); /* posiciona a linha no meio do texto independente do tamanho dele */
 }
-
-.quarto-banner p {
-  font-family: var(--subtitulo-banner-fonte);
-  font-size: var(--subtitulo-banner-tamanho);
-  margin-bottom: 30px;
-  padding-top: 25px;
-}
-
-.primeiro-banner {
-  background-image: url("../img/banner-home5-azul\ 1.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.segundo-banner {
-  background-image: url("../img/banner-home1-azul\ 1.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.terceiro-banner {
-  background-image: url("../img/banner-home3-azul\ 1.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.quarto-banner {
-  background-image: url("../img/banner-home4-azul\ 1.png");
-  background-size: cover;
-  background-position: center;
-}
-
-/*Tablet*/
-
-@media screen and (max-width: 768px) {
-  .segundo-banner p {
-    margin-top: 35px;
-    padding-bottom: 15px;
-  }
-}
-
-/*Celular*/
 
 @media screen and (max-width: 480px) {
-  .primeiro-banner p {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-size: 2rem;
-  }
-
-  .segundo-banner p {
-    margin-top: 35px;
-    padding-bottom: 25px;
-    font-size: 2rem;
-  }
-
-  .terceiro-banner p {
-    padding-top: 35px;
-    padding-bottom: 25px;
-    font-size: 2rem;
-  }
-
-  .terceiro-banner button {
-    margin-top: 0px;
-  }
-
-  .quarto-banner p {
-    padding-top: 35px;
-    padding-bottom: 25px;
-    font-size: 2rem;
-  }
-
-  .quarto-banner button {
-    margin-top: 0px;
-  }
+    .titulo-secao::after {
+        --largura-linha: 70px;
+    }
 }
 
-/*Dots*/
-.slick-dots {
-  /* position: absolute; */
-  position: static !important;
-  margin-top: -50px !important;
+/* História */
+.historia p {
+    text-align: center;
+    font-family: var(--paragrafo-home-fonte);
+    font-size: var(--paragrafo-home-tamanho);
+    margin: 80px 200px;
 }
 
-.slick-dots li button:before {
-  font-size: 15px !important;
-  width: 20px !important;
-  height: 20px !important;
-  color: #84b5be !important;
+/* trechos em negrito */
+.historia b {
+    color: var(--paragrafo-home);
 }
 
-.slick-dots li.slick-active button:before {
-  color: #fcd108 !important;
+/* tablet */
+@media screen and (max-width: 768px) {
+    .historia p{
+        margin: 40px 100px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+    .historia p{
+        margin: 40px 30px;
+    }
+}
+
+/* Por que nos contratar?*/
+/* Lista de ícones */
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;  
+}
+
+.item {
+  background-color: var(--cor-header);
+  border-radius: 50%;
+  height: 145px;
+  width: 145px;
+  margin-bottom: 150px;
+}
+
+.item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 70%;
+}
+
+/* Lista de textos */
+.item p {
+    text-align: center;
+    font-family: var(--h4-fonte);
+    font-size: var(--h4-tamanho);
+    font-weight: bold;
+    color: var(--h2-escuro);
+    margin: 60px 2%;
+}
+
+/*mobile*/
+@media screen and (max-width: 480px) {
+    .item{
+        height: 100px;
+        width: 100px;
+    }
+
+    .item img {
+        margin-top: 15px;
+    }
+}
+
+    
+/* Seção Rede Delta */
+#rede-delta {
+    text-align: center;
+    padding: 120px 10%;
+}
+
+.txt-rede-delta {
+    font: var(--paragrafo-home-tamanho) var(--paragrafo-home-fonte), serif;
+    color: var(--descricao-rede-delta-home);
+    margin-bottom: var(--paragrafo-home-tamanho);
+}
+
+@media screen and (max-width: 480px) {
+    #rede-delta {
+        padding: 0 5%;
+    }
+}
+
+/* Parceria unicamp */
+.parceria-unicamp {
+    display: flex;
+    background-color: var(--fundo-azul-home);
+    padding: 6rem 12%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.img-parceria-unicamp{
+    width: 150px;
+    align-self: center;
+}
+
+.titulo-parceria-unicamp{
+    font-family: var(--h2-fonte);
+    color: var(--h2-escuro);
+    font-weight: bold;
+    font-size: var(--h2-tamanho);
+    width: 400px;
+} 
+
+.titulo-img-parceria-unicamp{
+    width: 35%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-parceria-unicamp {
+    color: var(--paragrafo-home);
+    font-size: var(--paragrafo-home-tamanho);
+    font-family: var(--paragrafo-home-fonte);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.borda-desc-parceria-unicamp {
+    width: 470px;
+    margin-top:15px;
+    border: 3px solid; 
+    border-color: var(--cor-header);
+    border-radius: 10px;
+}
+
+/* css parceria-unicamp tablet e mobile */
+
+@media only screen and (max-width: 1200px){
+
+    .borda-desc-parceria-unicamp {
+        width:370px;
+    }
+}
+
+@media only screen and (max-width: 1070px){
+
+    .borda-desc-parceria-unicamp {
+        width:340px;
+    }
+
+    .titulo-img-parceria-unicamp{
+        width: 32%;
+    }
+
+    .titulo-parceria-unicamp{
+        width: 200px;
+    } 
+
+}
+
+@media only screen and (max-width: 770px){
+
+    .borda-desc-parceria-unicamp {
+        width:270px;
+    }
+
+    .titulo-img-parceria-unicamp{
+        width: 38%;
+    }   
+
+    .parceria-unicamp {
+        padding: 6rem 12%;
+    }
+
+}
+
+@media only screen and (max-width: 585px){
+
+    .parceria-unicamp {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 6rem 0%;
+    }
+
+    .borda-desc-parceria-unicamp {
+        width:300px;
+    }
+
+    .titulo-img-parceria-unicamp{
+        flex-direction: column-reverse;
+    }
+
+    .titulo-parceria-unicamp{
+        width: 400px;
+        margin-bottom: 4rem;
+    } 
+
+}
+
+@media only screen and (max-width: 475px){
+
+    .borda-desc-parceria-unicamp {
+        width:200px;
+    }
+
+    .titulo-parceria-unicamp{
+        width: 200px;
+        margin-bottom: 1rem;
+    } 
+
+    .img-parceria-unicamp{
+        width: 120px;
+    }
 }
