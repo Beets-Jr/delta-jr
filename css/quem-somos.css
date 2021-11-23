@@ -315,7 +315,6 @@
     color: var(--descricao-padrao);
     font-size: var(--descricao-padrao-tamanho);
     font-family: var(--descricao-padrao-fonte);
-    line-height: 17px;
 }
 
 .mascote .container .logoDelta{

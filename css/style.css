@@ -147,13 +147,12 @@
 /* Para a classe do botão geral é necessário usar uma outra classe junta, a classe borda.
     Exemplo: <button class="btn-padrao borda">Quero conhecer</button>
 */
-.btn-padrao {
+.btn-padrao-escuro {
     font: var(--botoes-fonte);
     font-size: var(--botoes-tamanho);
     text-transform: uppercase;
     color: var(--h2-escuro);
     font-weight: bold;
-    /* background-color: var(--enviar); */
     padding: 15px 20px;
     border: 4px solid;
     border-top: 0;
@@ -161,14 +160,18 @@
     background-color: transparent;
 }
 
-.borda {
+.btn-padrao-escuro:hover {
+    cursor: pointer;
+}
+
+.borda-escuro {
     position: relative;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 /* linha de cima */
-.borda::before {
+.borda-escuro::before {
     content: '';
     position: absolute;
     background-color: var(--h2-escuro);
@@ -179,7 +182,7 @@
 }
 
 /* linha de baixo */
-.borda::after {
+.borda-escuro::after {
     content: '';
     position: absolute;
     background-color: var(--h2-escuro);
@@ -365,7 +368,7 @@ nav {
 /* Para a classe do botão geral é necessário usar uma outra classe junta, a classe borda.
     Exemplo: <button class="btn-padrao borda">Quero conhecer</button>
 */
-.btn-padrao {
+.btn-padrao-claro {
     font: var(--botoes-fonte);
     font-size: var(--botoes-tamanho);
     text-transform: uppercase;
@@ -378,14 +381,18 @@ nav {
     border-bottom: 0;
 }
 
-.borda {
+.btn-padrao-claro:hover {
+    cursor: pointer;
+}
+
+.borda-claro {
     position: relative;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 /* linha de cima */
-.borda::before {
+.borda-claro::before {
     content: '';
     position: absolute;
     background-color: #84b5be;
@@ -396,7 +403,7 @@ nav {
 }
 
 /* linha de baixo */
-.borda::after {
+.borda-claro::after {
     content: '';
     position: absolute;
     background-color: #84b5be;

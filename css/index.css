@@ -93,6 +93,7 @@
     color: var(--h2-escuro);
     text-align: center;
     margin: var(--h2-tamanho) 0;
+    position: relative;
 }
 
 .titulo-secao::after {
@@ -152,7 +153,7 @@
 }
 
 .item {
-    background-color: var(--cor-header);
+    background-color: #84b5be;
     border-radius: 50%;
     height: 145px;
     width: 145px;
