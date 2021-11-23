@@ -416,7 +416,6 @@
 }
 
 /*Tablet*/
-
 @media screen and (max-width: 768px) {
     .segundo-banner p {
         margin-top: 35px;
@@ -425,7 +424,6 @@
 }
 
 /*Celular*/
-
 @media screen and (max-width: 480px) {
     .primeiro-banner p {
         padding-top: 25px;

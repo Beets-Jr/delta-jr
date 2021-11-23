@@ -259,6 +259,7 @@ nav {
 .submenu {
     display: none;
     position: absolute;
+    z-index: 999;
     top: calc(70px + 4rem);
     background-color: var(--cor-fundo-header-hover);
 }
@@ -306,6 +307,7 @@ nav {
 .menu-mobile {
     display: block;
     position: absolute;
+    z-index: 999;
     left: 0;
     top: calc(70px + 4rem);
     width: 100vw;
